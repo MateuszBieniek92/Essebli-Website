@@ -1,0 +1,122 @@
+.section-one {
+    .left-panel {
+        background-color: #118ded;
+        height: 100vh;
+        width: 27%;
+        position: relative;
+        -webkit-box-shadow: 10px 4px 39px 10px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 10px 4px 39px 10px rgba(0, 0, 0, 0.15);
+        box-shadow: 10px 4px 39px 10px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+        .big-logo {
+            font-size: 11.77em;
+            font-weight: bold;
+            left: -25px;
+            position: relative;
+            margin-top: 1.9em;
+            color: #66ceeb;
+            width: 100%;
+             :nth-child(2) {
+                margin-top: -0.35em;
+            }
+        }
+        .down-arrow {
+            transform: rotate(90deg);
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 100%;
+            color: #d8bba3;
+            display: inline-block;
+            float: left;
+            margin: -4.5em 0 0 calc(50% + 5em);
+            font-size: 25px;
+            p {
+                color: white;
+                padding: calc(50% - 20px) calc(50% - 20px);
+            }
+        }
+        .down-arrow:hover {
+            cursor: pointer;
+            border: none;
+            background: white;
+            p {
+                color: #118ded;
+            }
+        }
+        .down-arrow-line {
+            border-right: 0.5px solid white;
+            width: 2%;
+            height: 21.9%;
+            float: right;
+            margin-right: calc(50% - 152px);
+            margin-top: -35px;
+            opacity: 0.8;
+            overflow: hidden;
+        }
+    }
+    .right-panel {
+        height: 100vh;
+        width: 73%;
+        background-image: url('../photos/session 1/right-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 30px;
+        background-position-x: 100%;
+        position: relative;
+        .main-text {
+            color: white;
+            position: relative;
+            z-index: 999;
+            margin-top: 17em;
+            font-size: 27px;
+            display: inline-block;
+            text-align: right;
+            margin-left: 14em;
+            letter-spacing: 0.5px;
+        }
+        h2 {
+            position: relative;
+            z-index: 999;
+            color: white;
+            font-size: 35px;
+            margin-top: 0.5em;
+            margin-left: -1.9em;
+        }
+        .right-arrow-line {
+            border-bottom: 0.5px solid white;
+            width: 60%;
+            height: 1%;
+            opacity: 0.8;
+            left: -4.5em;
+            position: relative;
+            margin: 0.4em 0 0 0;
+        }
+    }
+    .right-panel:before {
+        content: '';
+        background: rgb(17, 141, 237);
+        background: -moz-linear-gradient(45deg, rgba(17, 141, 237, 1) 0%, rgba(9, 32, 89, 1) 100%);
+        background: -webkit-linear-gradient(45deg, rgba(17, 141, 237, 1) 0%, rgba(9, 32, 89, 1) 100%);
+        background: linear-gradient(45deg, rgba(17, 141, 237, 1) 0%, rgba(9, 32, 89, 1) 100%);
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bg-gradient:before {
+        content: '';
+        background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, rgba(35, 115, 195, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, rgba(35, 115, 195, 1) 100%);
+        background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, rgba(35, 115, 195, 1) 100%);
+        height: 100%;
+        width: 100%;
+        opacity: 0.85;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

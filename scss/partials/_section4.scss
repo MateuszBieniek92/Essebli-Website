@@ -1,0 +1,97 @@
+.section-four {
+    margin: 15.9em 0 0 0;
+    .number {
+        margin: 0px 0px 10px calc(50% - 28px);
+    }
+    .section-three-header {
+        background: #171f3e;
+        height: 600px;
+        p {
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            border-left: 8px solid #1e93ee;
+            padding-left: 15px;
+            margin: 1.8em calc(50% - 95px);
+            letter-spacing: 1px;
+        }
+        .mac-photo {
+            background-image: url('../photos/session 4/MacBook.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 280px;
+            width: 479px;
+            margin: 252px 15px 8px 43px;
+        }
+    }
+    .lists {
+        .list-one,
+        .list-two {
+            margin: 3em 0 0 10.4em;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        .list-two {
+            margin: 3em 0 0 0em;
+        }
+        ul {
+            li {
+                color: #118ded;
+                span {
+                    color: #171f3e;
+                }
+            }
+        }
+    }
+    .references {
+        float: right;
+        border-right: 8px solid #1a2240;
+        border-left: 8px solid #1a2240;
+        .logo {
+            margin: calc(50% - 450px) calc(50% - 380px);
+             color: #a7a8b0;
+        }
+         :nth-child(2) {
+            float: right;
+            margin: -10em 5em 0 25em;
+            text-align: justify;
+            font-style: italic;
+            color: #a7a8b0;
+        }
+         :nth-child(3) {
+            float: right;
+            margin: 0 5em 0 0;
+            font-weight: bold;
+             color:  #1a2240;
+        }
+    }
+    .left-slider-btn,
+    .right-slider-btn {
+        //  transform: rotate(90deg);
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #e0e0e0;
+        border-radius: 100%;
+        color: #e0e0e0;
+        display: inline-block;
+        float: left;
+        margin: 3em 0 0 calc(50% + 18em);
+        font-size: 25px;
+        p {
+            color: #e0e0e0;
+            padding: calc(50% - 20px) calc(50% - 8px);
+        }
+    }
+    .right-slider-btn {
+        margin: -40px 0 0 calc(50% + 16em);
+    }
+    .left-slider-btn:hover,
+    .right-slider-btn:hover {
+        cursor: pointer;
+        border: 2px solid #118ded;
+        p {
+            color: #118ded;
+        }
+    }
+}

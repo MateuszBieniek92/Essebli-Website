@@ -1,0 +1,638 @@
+@font-face {
+  src: url("../fonts/ebrima.ttf");
+  src: local("ebrima"), local("ebrima"), url("../fonts/ebrima.ttf") format("truetype"); }
+
+/* line 5, scss/main.css */
+* {
+  font-family: "Ebrima";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 11, scss/main.css */
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+/* line 15, scss/main.css */
+.row::after, .row::before {
+  display: table;
+  content: '';
+  clear: both; }
+
+/* line 20, scss/main.css */
+.col-1 {
+  width: 8.33333%; }
+
+/* line 23, scss/main.css */
+.col-2 {
+  width: 16.66667%; }
+
+/* line 26, scss/main.css */
+.col-3 {
+  width: 25%; }
+
+/* line 29, scss/main.css */
+.col-4 {
+  width: 33.33333%; }
+
+/* line 32, scss/main.css */
+.col-5 {
+  width: 41.66667%; }
+
+/* line 35, scss/main.css */
+.col-6 {
+  width: 50%; }
+
+/* line 38, scss/main.css */
+.col-7 {
+  width: 58.33333%; }
+
+/* line 41, scss/main.css */
+.col-8 {
+  width: 66.66667%; }
+
+/* line 44, scss/main.css */
+.col-9 {
+  width: 75%; }
+
+/* line 47, scss/main.css */
+.col-10 {
+  width: 83.33333%; }
+
+/* line 50, scss/main.css */
+.col-11 {
+  width: 91.66667%; }
+
+/* line 53, scss/main.css */
+.col-12 {
+  width: 100%; }
+
+/* line 56, scss/main.css */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: 10px; }
+
+/* line 61, scss/main.css */
+header {
+  z-index: 999;
+  color: white;
+  height: 50px;
+  background: red;
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  width: 100%; }
+
+/* line 71, scss/main.css */
+nav {
+  padding: 10px 35px; }
+
+/* line 74, scss/main.css */
+.logo {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 -90px; }
+
+/* line 80, scss/main.css */
+.menu {
+  list-style-type: none;
+  padding: 15px 0;
+  float: right; }
+
+/* line 84, scss/main.css */
+.menu li {
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding-right: 20px; }
+
+/* line 90, scss/main.css */
+.menu :nth-child(7) {
+  padding-left: 20px;
+  padding-right: 10px;
+  color: #66ceeb;
+  font-weight: bold; }
+
+/* line 95, scss/main.css */
+.menu :nth-child(8) {
+  color: #ffffff;
+  font-weight: bold; }
+
+/* line 98, scss/main.css */
+.menu li:hover {
+  color: white;
+  cursor: pointer; }
+
+/* line 101, scss/main.css */
+.menu :nth-child(7):hover,
+.menu :nth-child(8):hover {
+  color: #66ceeb; }
+
+/* line 105, scss/main.css */
+.section-one .left-panel {
+  background-color: #118ded;
+  height: 100vh;
+  width: 27%;
+  position: relative;
+  -webkit-box-shadow: 10px 4px 39px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 10px 4px 39px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 4px 39px 10px rgba(0, 0, 0, 0.15);
+  z-index: 100; }
+
+/* line 114, scss/main.css */
+.section-one .left-panel .big-logo {
+  font-size: 11.77em;
+  font-weight: bold;
+  left: -25px;
+  position: relative;
+  margin-top: 1.9em;
+  color: #66ceeb;
+  width: 100%; }
+
+/* line 122, scss/main.css */
+.section-one .left-panel .big-logo :nth-child(2) {
+  margin-top: -0.35em; }
+
+/* line 124, scss/main.css */
+.section-one .left-panel .down-arrow {
+  transform: rotate(90deg);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: #d8bba3;
+  display: inline-block;
+  float: left;
+  margin: -4.5em 0 0 calc(50% + 5em);
+  font-size: 25px; }
+
+/* line 136, scss/main.css */
+.section-one .left-panel .down-arrow p {
+  color: white;
+  padding: calc(50% - 20px) calc(50% - 20px); }
+
+/* line 139, scss/main.css */
+.section-one .left-panel .down-arrow:hover {
+  cursor: pointer;
+  border: none;
+  background: white; }
+
+/* line 143, scss/main.css */
+.section-one .left-panel .down-arrow:hover p {
+  color: #118ded; }
+
+/* line 145, scss/main.css */
+.section-one .left-panel .down-arrow-line {
+  border-right: 0.5px solid white;
+  width: 2%;
+  height: 21.9%;
+  float: right;
+  margin-right: calc(50% - 152px);
+  margin-top: -35px;
+  opacity: 0.8;
+  overflow: hidden; }
+
+/* line 155, scss/main.css */
+.section-one .right-panel {
+  height: 100vh;
+  width: 73%;
+  background-image: url("../photos/session 1/right-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  background-position-x: 100%;
+  position: relative; }
+
+/* line 164, scss/main.css */
+.section-one .right-panel .main-text {
+  color: white;
+  position: relative;
+  z-index: 999;
+  margin-top: 17em;
+  font-size: 27px;
+  display: inline-block;
+  text-align: right;
+  margin-left: 14em;
+  letter-spacing: 0.5px; }
+
+/* line 174, scss/main.css */
+.section-one .right-panel h2 {
+  position: relative;
+  z-index: 999;
+  color: white;
+  font-size: 35px;
+  margin-top: 0.5em;
+  margin-left: -1.9em; }
+
+/* line 181, scss/main.css */
+.section-one .right-panel .right-arrow-line {
+  border-bottom: 0.5px solid white;
+  width: 60%;
+  height: 1%;
+  opacity: 0.8;
+  left: -4.5em;
+  position: relative;
+  margin: 0.4em 0 0 0; }
+
+/* line 190, scss/main.css */
+.section-one .right-panel:before {
+  content: '';
+  background: #118ded;
+  background: -moz-linear-gradient(45deg, #118ded 0%, #092059 100%);
+  background: -webkit-linear-gradient(45deg, #118ded 0%, #092059 100%);
+  background: linear-gradient(45deg, #118ded 0%, #092059 100%);
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 203, scss/main.css */
+.section-one .bg-gradient:before {
+  content: '';
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, #2373c3 100%);
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, #2373c3 100%);
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, #2373c3 100%);
+  height: 100%;
+  width: 100%;
+  opacity: 0.85;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+/* line 215, scss/main.css */
+.section-two .section-two-header {
+  background: #171f3e;
+  height: 610px; }
+
+/* line 218, scss/main.css */
+.section-two .section-two-header p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-left: 8px solid #1e93ee;
+  padding-left: 15px;
+  margin: 6.5em calc(50% - 90px);
+  letter-spacing: 1px; }
+
+/* line 227, scss/main.css */
+.section-two .top-left-photo {
+  background-image: url("../photos/session 2/top-left-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 390px; }
+
+/* line 233, scss/main.css */
+.section-two .top-right-text,
+.section-two .center-text,
+.section-two .center-right-text,
+.section-two .bottom-left-text {
+  height: 390px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: justify; }
+
+/* line 241, scss/main.css */
+.section-two .top-right-text p,
+.section-two .center-text p,
+.section-two .center-right-text p,
+.section-two .bottom-left-text p {
+  color: #171f3e;
+  margin: 12em 1em 0 1em; }
+
+/* line 248, scss/main.css */
+.section-two .center-right-photo {
+  background-image: url("../photos/session 2/center-right-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 390px; }
+
+/* line 254, scss/main.css */
+.section-two .center-text p {
+  margin: 1em 1em 0 1em; }
+
+/* line 257, scss/main.css */
+.section-two .center-left-photo {
+  width: 55%;
+  float: right;
+  background-image: url("../photos/session 2/center-left-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px; }
+
+/* line 265, scss/main.css */
+.section-two .center-right-text,
+.section-two .bottom-left-text {
+  float: right;
+  height: 200px; }
+
+/* line 269, scss/main.css */
+.section-two .center-right-text p,
+.section-two .bottom-left-text p {
+  margin: 1em 1em 0 1em; }
+
+/* line 273, scss/main.css */
+.section-two .bottom-left-text {
+  width: 55%; }
+
+/* line 275, scss/main.css */
+.section-two .bottom-left-text p {
+  margin: 2em 6em 0 6em; }
+
+/* line 278, scss/main.css */
+.section-two .bottom-right-photo {
+  float: right;
+  background-image: url("../photos/session 2/bottom-right-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px; }
+
+/* line 285, scss/main.css */
+.section-two .bottom-center-text {
+  position: absolute;
+  margin-top: 73.75em;
+  max-width: 73.5%;
+  height: 265px;
+  background: #118ded;
+  right: 0; }
+
+/* line 292, scss/main.css */
+.section-two .bottom-center-text .bulb {
+  background-image: url("../photos/session 2/bulb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 155px;
+  width: 86px;
+  display: inline-block;
+  margin: 3em 0 0 2em; }
+
+/* line 300, scss/main.css */
+.section-two .bottom-center-text p {
+  display: inline-block;
+  margin: 0px 26em 0 8em;
+  position: relative;
+  top: -6.5em;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  text-align: justify; }
+
+/* line 311, scss/main.css */
+.section-numbers {
+  list-style-type: none; }
+
+/* line 313, scss/main.css */
+.section-numbers li {
+  margin: 0 0 10px calc(50% - 12px);
+  height: 100vh;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #cccccc; }
+
+/* line 320, scss/main.css */
+.section-numbers .number {
+  text-align: center;
+  width: 41px;
+  height: 40px;
+  border: 1px solid #1e93ee;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 20px;
+  color: #1e93ee;
+  padding: calc(50% - 35px) calc(50% - 25px);
+  margin: 125px 0px 10px calc(50% - 28px); }
+
+/* line 332, scss/main.css */
+.section-three {
+  margin-top: 16.5em; }
+
+/* line 334, scss/main.css */
+.section-three .section-number {
+  margin: 0.5em 0 0 0;
+  position: relative;
+  z-index: 999; }
+
+/* line 338, scss/main.css */
+.section-three .section-number .number {
+  margin: 0px 0px 10px calc(50% - 28px); }
+
+/* line 340, scss/main.css */
+.section-three .team-description {
+  background: #171f3e;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  width: 62%;
+  color: #118ded; }
+
+/* line 347, scss/main.css */
+.section-three .team-description .section-three-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 1em 6em 0 18em;
+  color: white;
+  border-left: 8px solid #1e93ee;
+  padding-left: 15px; }
+
+/* line 354, scss/main.css */
+.section-three .team-description :nth-child(2) {
+  margin: 6em 6em 0 24em;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 35px; }
+
+/* line 360, scss/main.css */
+.section-three .number-of-employees {
+  float: right;
+  height: 499px; }
+
+/* line 363, scss/main.css */
+.section-three .number-of-employees p {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 2.2em 2em 0 2.2em;
+  line-height: 30px;
+  color: #171f3e; }
+
+/* line 369, scss/main.css */
+.section-three .consultants-text {
+  margin: 31.2em 0 0 0; }
+
+/* line 371, scss/main.css */
+.section-three .consultants-text p {
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 35px;
+  margin: 4em 6em 1.6em 0.5em;
+  font-weight: bold; }
+
+/* line 378, scss/main.css */
+.section-three .experience-text {
+  background: green;
+  position: absolute;
+  margin: 50.5em 0 0 0;
+  left: 0;
+  width: 81%;
+  height: 220px;
+  background: #118ded; }
+
+/* line 386, scss/main.css */
+.section-three .experience-text p {
+  font-size: 20px;
+  color: white;
+  margin: 2.5em 10.5em 0 32em;
+  text-align: justify; }
+
+/* line 391, scss/main.css */
+.section-three .experience-text .defense-shield {
+  background-image: url("../photos/session 3/white-shield.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 104px;
+  width: 100px;
+  float: right;
+  margin: -6em 3em 0 0; }
+
+/* line 399, scss/main.css */
+.section-three .image-consultants {
+  background-image: url("../photos/session 3/bottom-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 310px;
+  position: absolute;
+  margin: 31.2em 0 0 0;
+  right: 0;
+  width: 38%; }
+
+/* line 408, scss/main.css */
+.section-three .employee-image {
+  background-image: url("../photos/session 3/man-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 325px;
+  width: 190px;
+  bottom: -50px;
+  position: relative;
+  right: 10px; }
+
+/* line 418, scss/main.css */
+.section-four {
+  margin: 15.9em 0 0 0; }
+
+/* line 420, scss/main.css */
+.section-four .number {
+  margin: 0px 0px 10px calc(50% - 28px); }
+
+/* line 422, scss/main.css */
+.section-four .section-three-header {
+  background: #171f3e;
+  height: 600px; }
+
+/* line 425, scss/main.css */
+.section-four .section-three-header p {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-left: 8px solid #1e93ee;
+  padding-left: 15px;
+  margin: 1.8em calc(50% - 95px);
+  letter-spacing: 1px; }
+
+/* line 433, scss/main.css */
+.section-four .section-three-header .mac-photo {
+  background-image: url("../photos/session 4/MacBook.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 280px;
+  width: 479px;
+  margin: 252px 15px 8px 43px; }
+
+/* line 440, scss/main.css */
+.section-four .lists .list-one,
+.section-four .lists .list-two {
+  margin: 3em 0 0 10.4em;
+  font-size: 22px;
+  line-height: 26px; }
+
+/* line 445, scss/main.css */
+.section-four .lists .list-two {
+  margin: 3em 0 0 0em; }
+
+/* line 447, scss/main.css */
+.section-four .lists ul li {
+  color: #118ded; }
+
+/* line 449, scss/main.css */
+.section-four .lists ul li span {
+  color: #171f3e; }
+
+/* line 451, scss/main.css */
+.section-four .references {
+  float: right;
+  border-right: 8px solid #1a2240;
+  border-left: 8px solid #1a2240; }
+
+/* line 455, scss/main.css */
+.section-four .references .logo {
+  margin: calc(50% - 450px) calc(50% - 380px);
+  color: #a7a8b0; }
+
+/* line 458, scss/main.css */
+.section-four .references :nth-child(2) {
+  float: right;
+  margin: -10em 5em 0 25em;
+  text-align: justify;
+  font-style: italic;
+  color: #a7a8b0; }
+
+/* line 464, scss/main.css */
+.section-four .references :nth-child(3) {
+  float: right;
+  margin: 0 5em 0 0;
+  font-weight: bold;
+  color: #1a2240; }
+
+/* line 469, scss/main.css */
+.section-four .left-slider-btn,
+.section-four .right-slider-btn {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 100%;
+  color: #e0e0e0;
+  display: inline-block;
+  float: left;
+  margin: 3em 0 0 calc(50% + 18em);
+  font-size: 25px; }
+
+/* line 481, scss/main.css */
+.section-four .left-slider-btn p,
+.section-four .right-slider-btn p {
+  color: #e0e0e0;
+  padding: calc(50% - 20px) calc(50% - 8px); }
+
+/* line 485, scss/main.css */
+.section-four .right-slider-btn {
+  margin: -40px 0 0 calc(50% + 16em); }
+
+/* line 487, scss/main.css */
+.section-four .left-slider-btn:hover,
+.section-four .right-slider-btn:hover {
+  cursor: pointer;
+  border: 2px solid #118ded; }
+
+/* line 491, scss/main.css */
+.section-four .left-slider-btn:hover p,
+.section-four .right-slider-btn:hover p {
+  color: #118ded; }

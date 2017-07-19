@@ -1,0 +1,100 @@
+.section-three {
+    margin-top: 16.5em;
+    .section-number {
+        margin: 0.5em 0 0 0;
+        position: relative;
+        z-index: 999;
+        .number {
+            margin: 0px 0px 10px calc(50% - 28px);
+        }
+    }
+    .team-description {
+        .section-three-header {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 1em 6em 0 18em;
+            color: white;
+            border-left: 8px solid #1e93ee;
+            padding-left: 15px;
+        }
+        background: #171f3e;
+        height: 500px;
+        position: absolute;
+        left: 0;
+        width: 62%;
+        color: #118ded;
+         :nth-child(2) {
+            margin: 6em 6em 0 24em;
+            font-size: 20px;
+            text-align: justify;
+            letter-spacing: 1px;
+            line-height: 35px;
+        }
+    }
+    .number-of-employees {
+        float: right;
+        height: 499px;
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 2.2em 2em 0 2.2em;
+            line-height: 30px;
+            color: #171f3e;
+        }
+    }
+    .consultants-text {
+        margin: 31.2em 0 0 0;
+        p {
+            font-size: 20px;
+            text-align: justify;
+            letter-spacing: 1px;
+            line-height: 35px;
+            margin: 4em 6em 1.6em 0.5em;
+            font-weight: bold;
+        }
+    }
+    .experience-text {
+        background: green;
+        position: absolute;
+        margin: 50.5em 0 0 0;
+        left: 0;
+        width: 81%;
+        height: 220px;
+        background: #118ded;
+        p {
+            font-size: 20px;
+            color: white;
+            margin: 2.5em 10.5em 0 32em;
+            text-align: justify;
+        }
+        .defense-shield {
+            background-image: url('../photos/session 3/white-shield.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 104px;
+            width: 100px;
+            float: right;
+            margin: -6em 3em 0 0;
+        }
+    }
+    .image-consultants {
+        background-image: url('../photos/session 3/bottom-right.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 310px;
+        position: absolute;
+        margin: 31.2em 0 0 0;
+        right: 0;
+        width: 38%;
+    }
+    .employee-image {
+        background-image: url('../photos/session 3/man-photo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 325px;
+        width: 190px;
+        bottom: -50px;
+        position: relative;
+        right: 10px;
+    }
+}

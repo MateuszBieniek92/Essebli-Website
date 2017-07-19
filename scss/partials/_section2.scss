@@ -1,0 +1,141 @@
+.section-two {
+    .section-two-header {
+        background: #171f3e;
+        height: 610px;
+        p {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-left: 8px solid #1e93ee;
+            padding-left: 15px;
+            margin: 6.5em calc(50% - 90px);
+            letter-spacing: 1px;
+        }
+    }
+    .top-left-photo {
+        background-image: url('../photos/session 2/top-left-photo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 390px;
+    }
+    .top-right-text,
+    .center-text,
+    .center-right-text,
+    .bottom-left-text {
+        height: 390px;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: justify;
+        p {
+            color: #171f3e;
+            margin: 12em 1em 0 1em;
+        }
+    }
+    .center-right-photo {
+        background-image: url('../photos/session 2/center-right-photo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 390px;
+    }
+    .center-text {
+        p {
+            margin: 1em 1em 0 1em;
+        }
+    }
+    .center-left-photo {
+        width: 55%;
+        float: right;
+        background-image: url('../photos/session 2/center-left-photo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .center-right-text,
+    .bottom-left-text {
+        float: right;
+        height: 200px;
+        p {
+            margin: 1em 1em 0 1em;
+        }
+    }
+    .bottom-left-text {
+        width: 55%;
+        p {
+            margin: 2em 6em 0 6em;
+        }
+    }
+    .bottom-right-photo {
+        float: right;
+        background-image: url('../photos/session 2/bottom-right-photo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .bottom-center-text {
+        position: absolute;
+        margin-top: 73.75em;
+        max-width: 73.5%;
+        height: 265px;
+        background: #118ded;
+        right: 0;
+        //v2
+        //        position: absolute;
+        //        margin-top: 73.75em;
+        //        max-width: 76.9%;
+        //        float: right;
+        //        height: 265px;
+        //        background: #118ded;
+        //        left: 24em;
+        // v1        
+        //                position: absolute;
+        //                margin-top: 73.75em;
+        //        width: 88.3%;
+        //        float: right;
+        //        height: 265px;
+        //        background: #118ded;
+        .bulb {
+            background-image: url('../photos/session 2/bulb.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 155px;
+            width: 86px;
+            display: inline-block;
+            margin: 3em 0 0 2em;
+        }
+        p {
+            display: inline-block;
+            margin: 0px 26em 0 8em;
+            position: relative;
+            top: -6.5em;
+            text-align: left;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: white;
+            text-align: justify;
+        }
+    }
+}
+
+    .section-numbers {
+        list-style-type: none;
+        li {
+            margin: 0 0 10px calc(50% - 12px);
+            height: 100vh;
+            border-radius: 100%;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #cccccc;
+        }
+        .number {
+            text-align: center;
+            width: 41px;
+            height: 40px;
+            border: 1px solid #1e93ee;
+            border-radius: 100%;
+            display: inline-block;
+            font-size: 20px;
+            color: #1e93ee;
+            padding: calc(50% - 35px) calc(50% - 25px);
+            margin: 125px 0px 10px calc(50% - 28px);
+        }
+    }
