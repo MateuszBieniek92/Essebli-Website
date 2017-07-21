@@ -49,25 +49,32 @@
         border-left: 8px solid #1a2240;
         .logo {
             margin: calc(50% - 450px) calc(50% - 380px);
-             color: #a7a8b0;
+            color: #a7a8b0;
         }
-         :nth-child(2) {
+        .comp-text {
             float: right;
             margin: -10em 5em 0 25em;
             text-align: justify;
             font-style: italic;
             color: #a7a8b0;
         }
-         :nth-child(3) {
+        .comp-more {
             float: right;
-            margin: 0 5em 0 0;
+            margin: 1.5em 5em 0 0;
             font-weight: bold;
-             color:  #1a2240;
+            color: #1a2240;
+        }
+        .comp-more:hover {
+            color: #1e93ee;
+            cursor: pointer;
+            transition: 500ms;
+        }
+        .visible {
+            display: inline-block;
         }
     }
     .left-slider-btn,
     .right-slider-btn {
-        //  transform: rotate(90deg);
         text-align: center;
         width: 40px;
         height: 40px;
@@ -76,7 +83,7 @@
         color: #e0e0e0;
         display: inline-block;
         float: left;
-        margin: 3em 0 0 calc(50% + 18em);
+        margin: 3em 0 0 calc(50% + 16em);
         font-size: 25px;
         p {
             color: #e0e0e0;
@@ -84,7 +91,7 @@
         }
     }
     .right-slider-btn {
-        margin: -40px 0 0 calc(50% + 16em);
+        margin: -40px 0 0 calc(50% + 18em);
     }
     .left-slider-btn:hover,
     .right-slider-btn:hover {

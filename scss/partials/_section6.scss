@@ -1,0 +1,134 @@
+.section-six {
+    .section-numbers {
+        margin: -3.3em 0 0 0;
+        .number {
+            margin: 0px 0px 10px calc(50% - 28px);
+        }
+    }
+    .section-six-bg {
+        background: #1a2240;
+        width: 65%;
+        height: 540px;
+        position: absolute;
+        z-index: -1;
+    }
+    .section-six-job-photo {
+        background-image: url('../photos/session 6/apliccation-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 110px;
+        position: relative;
+        height: 430px;
+        h2 {
+            font-size: 35px;
+            color: white;
+            margin: 7.5em 0 0 2em;
+        }
+        p {
+            margin: 0.9em 0 0 3.3em;
+            font-size: 22px;
+            color: white;
+        }
+    }
+    .section-six-header {
+         :first-child {
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            margin: 0.9em 0 0 0.6em;
+            border-left: 8px solid #1e93ee;
+            padding-left: 1em;
+        }
+         :nth-child(2) {
+            color: #1e93ee;
+            font-size: 26px;
+            margin: 5em 0 0 -0.5em;
+        }
+         :last-child {
+            color: white;
+            font-size: 22px;
+            margin: 1em 0 0 -0.5em;
+        }
+    }
+    .tight-stripe {
+        height: 10px;
+        background: #1e93ee;
+        margin: 6.9em 0 0 0;
+        width: 49%;
+        float: right;
+    }
+    .s7-down-arrow {
+        border-right: 2px solid #1e93ee;
+        width: 2%;
+        height: 385px;
+        margin-left: calc(50% - 190px);
+        display: inline-block;
+        margin-top: 25px;
+        margin-bottom: -17px;
+    }
+    .requirements {
+        display: inline-block;
+        bottom: 20em;
+        position: relative;
+        font-size: 18px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .requirements-list {
+        display: inline-block;
+        top: -13em;
+        position: relative;
+        left: -70px;
+        li {
+            color: #1e93ee;
+            span {
+                color: #1a2240;
+            }
+        }
+    }
+    .require-left-slider-btn,
+    .require-right-slider-btn {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #e0e0e0;
+        border-radius: 100%;
+        color: #e0e0e0;
+        display: inline-block;
+        float: left;
+        margin: 2em 0 0 calc(50% + 2em);
+        font-size: 25px;
+        p {
+            color: #e0e0e0;
+            padding: calc(50% - 20px) calc(50% - 8px);
+        }
+    }
+    .require-right-slider-btn {
+        margin: -1.55em 0 0 calc(50% + 5em);
+    }
+    .require-left-slider-btn:hover,
+    .require-right-slider-btn:hover {
+        cursor: pointer;
+        border: 2px solid #118ded;
+        p {
+            color: #118ded;
+        }
+    }
+    .aplication-btn {
+        width: 325px;
+        height: 40px;
+        border: 1px solid #1a2240;
+        background: none;
+        margin: 11em 0em 0 -3em;
+        color: #1a2240;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    .aplication-btn:hover {
+        color: white;
+        background: #1a2240;
+        transition: 500ms;
+        transform: scale(1.2, 1.2);
+    }
+}

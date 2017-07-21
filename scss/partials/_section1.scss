@@ -11,13 +11,18 @@
         .big-logo {
             font-size: 11.77em;
             font-weight: bold;
-            left: -25px;
+            //left: -25px;
             position: relative;
             margin-top: 1.9em;
             color: #66ceeb;
             width: 100%;
+             :first-child {
+                float: right;
+                margin-right: -0.11em;
+            }
              :nth-child(2) {
                 margin-top: -0.35em;
+                margin-left: -0.11em;
             }
         }
         .down-arrow {

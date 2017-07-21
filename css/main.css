@@ -79,60 +79,73 @@ header {
   z-index: 999;
   color: white;
   height: 50px;
-  background: red;
   display: block;
   background: rgba(255, 255, 255, 0);
   position: absolute;
   width: 100%; }
 
-/* line 71, scss/main.css */
-nav {
+/* line 69, scss/main.css */
+header nav {
   padding: 10px 35px; }
 
-/* line 74, scss/main.css */
-.logo {
+/* line 71, scss/main.css */
+header .logo {
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
-  margin: 0 -90px; }
+  margin: -5px -90px; }
 
-/* line 80, scss/main.css */
-.menu {
+/* line 76, scss/main.css */
+header .menu {
   list-style-type: none;
   padding: 15px 0;
   float: right; }
 
-/* line 84, scss/main.css */
-.menu li {
+/* line 80, scss/main.css */
+header .menu li {
   letter-spacing: 0.2px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.2);
   display: inline-block;
   padding-right: 20px; }
 
-/* line 90, scss/main.css */
-.menu :nth-child(7) {
+/* line 86, scss/main.css */
+header .menu :nth-child(7) {
   padding-left: 20px;
   padding-right: 10px;
   color: #66ceeb;
   font-weight: bold; }
 
-/* line 95, scss/main.css */
-.menu :nth-child(8) {
+/* line 91, scss/main.css */
+header .menu :nth-child(8) {
   color: #ffffff;
   font-weight: bold; }
 
-/* line 98, scss/main.css */
-.menu li:hover {
+/* line 94, scss/main.css */
+header .menu li:hover {
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 500ms; }
 
-/* line 101, scss/main.css */
-.menu :nth-child(7):hover,
-.menu :nth-child(8):hover {
+/* line 98, scss/main.css */
+header .menu :nth-child(7):hover,
+header .menu :nth-child(8):hover {
   color: #66ceeb; }
 
-/* line 105, scss/main.css */
+/* line 101, scss/main.css */
+header .sticky {
+  position: fixed;
+  width: 100%;
+  background-color: #118ded;
+  top: 0;
+  height: 50px;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.35);
+  transition: 0.4s;
+  display: inline-block; }
+
+/* line 113, scss/main.css */
 .section-one .left-panel {
   background-color: #118ded;
   height: 100vh;
@@ -143,21 +156,26 @@ nav {
   box-shadow: 10px 4px 39px 10px rgba(0, 0, 0, 0.15);
   z-index: 100; }
 
-/* line 114, scss/main.css */
+/* line 122, scss/main.css */
 .section-one .left-panel .big-logo {
   font-size: 11.77em;
   font-weight: bold;
-  left: -25px;
   position: relative;
   margin-top: 1.9em;
   color: #66ceeb;
   width: 100%; }
 
-/* line 122, scss/main.css */
-.section-one .left-panel .big-logo :nth-child(2) {
-  margin-top: -0.35em; }
+/* line 129, scss/main.css */
+.section-one .left-panel .big-logo :first-child {
+  float: right;
+  margin-right: -0.11em; }
 
-/* line 124, scss/main.css */
+/* line 132, scss/main.css */
+.section-one .left-panel .big-logo :nth-child(2) {
+  margin-top: -0.35em;
+  margin-left: -0.11em; }
+
+/* line 135, scss/main.css */
 .section-one .left-panel .down-arrow {
   transform: rotate(90deg);
   text-align: center;
@@ -171,22 +189,22 @@ nav {
   margin: -4.5em 0 0 calc(50% + 5em);
   font-size: 25px; }
 
-/* line 136, scss/main.css */
+/* line 147, scss/main.css */
 .section-one .left-panel .down-arrow p {
   color: white;
   padding: calc(50% - 20px) calc(50% - 20px); }
 
-/* line 139, scss/main.css */
+/* line 150, scss/main.css */
 .section-one .left-panel .down-arrow:hover {
   cursor: pointer;
   border: none;
   background: white; }
 
-/* line 143, scss/main.css */
+/* line 154, scss/main.css */
 .section-one .left-panel .down-arrow:hover p {
   color: #118ded; }
 
-/* line 145, scss/main.css */
+/* line 156, scss/main.css */
 .section-one .left-panel .down-arrow-line {
   border-right: 0.5px solid white;
   width: 2%;
@@ -197,7 +215,7 @@ nav {
   opacity: 0.8;
   overflow: hidden; }
 
-/* line 155, scss/main.css */
+/* line 166, scss/main.css */
 .section-one .right-panel {
   height: 100vh;
   width: 73%;
@@ -208,7 +226,7 @@ nav {
   background-position-x: 100%;
   position: relative; }
 
-/* line 164, scss/main.css */
+/* line 175, scss/main.css */
 .section-one .right-panel .main-text {
   color: white;
   position: relative;
@@ -220,7 +238,7 @@ nav {
   margin-left: 14em;
   letter-spacing: 0.5px; }
 
-/* line 174, scss/main.css */
+/* line 185, scss/main.css */
 .section-one .right-panel h2 {
   position: relative;
   z-index: 999;
@@ -229,7 +247,7 @@ nav {
   margin-top: 0.5em;
   margin-left: -1.9em; }
 
-/* line 181, scss/main.css */
+/* line 192, scss/main.css */
 .section-one .right-panel .right-arrow-line {
   border-bottom: 0.5px solid white;
   width: 60%;
@@ -239,7 +257,7 @@ nav {
   position: relative;
   margin: 0.4em 0 0 0; }
 
-/* line 190, scss/main.css */
+/* line 201, scss/main.css */
 .section-one .right-panel:before {
   content: '';
   background: #118ded;
@@ -253,7 +271,7 @@ nav {
   top: 0;
   left: 0; }
 
-/* line 203, scss/main.css */
+/* line 214, scss/main.css */
 .section-one .bg-gradient:before {
   content: '';
   background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, #2373c3 100%);
@@ -266,12 +284,12 @@ nav {
   bottom: 0;
   left: 0; }
 
-/* line 215, scss/main.css */
+/* line 226, scss/main.css */
 .section-two .section-two-header {
   background: #171f3e;
   height: 610px; }
 
-/* line 218, scss/main.css */
+/* line 229, scss/main.css */
 .section-two .section-two-header p {
   color: white;
   font-weight: bold;
@@ -281,14 +299,14 @@ nav {
   margin: 6.5em calc(50% - 90px);
   letter-spacing: 1px; }
 
-/* line 227, scss/main.css */
+/* line 238, scss/main.css */
 .section-two .top-left-photo {
   background-image: url("../photos/session 2/top-left-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 390px; }
 
-/* line 233, scss/main.css */
+/* line 244, scss/main.css */
 .section-two .top-right-text,
 .section-two .center-text,
 .section-two .center-right-text,
@@ -298,7 +316,7 @@ nav {
   line-height: 1.2;
   text-align: justify; }
 
-/* line 241, scss/main.css */
+/* line 252, scss/main.css */
 .section-two .top-right-text p,
 .section-two .center-text p,
 .section-two .center-right-text p,
@@ -306,18 +324,18 @@ nav {
   color: #171f3e;
   margin: 12em 1em 0 1em; }
 
-/* line 248, scss/main.css */
+/* line 259, scss/main.css */
 .section-two .center-right-photo {
   background-image: url("../photos/session 2/center-right-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 390px; }
 
-/* line 254, scss/main.css */
+/* line 265, scss/main.css */
 .section-two .center-text p {
   margin: 1em 1em 0 1em; }
 
-/* line 257, scss/main.css */
+/* line 268, scss/main.css */
 .section-two .center-left-photo {
   width: 55%;
   float: right;
@@ -326,26 +344,26 @@ nav {
   background-repeat: no-repeat;
   height: 200px; }
 
-/* line 265, scss/main.css */
+/* line 276, scss/main.css */
 .section-two .center-right-text,
 .section-two .bottom-left-text {
   float: right;
   height: 200px; }
 
-/* line 269, scss/main.css */
+/* line 280, scss/main.css */
 .section-two .center-right-text p,
 .section-two .bottom-left-text p {
   margin: 1em 1em 0 1em; }
 
-/* line 273, scss/main.css */
+/* line 284, scss/main.css */
 .section-two .bottom-left-text {
   width: 55%; }
 
-/* line 275, scss/main.css */
+/* line 286, scss/main.css */
 .section-two .bottom-left-text p {
   margin: 2em 6em 0 6em; }
 
-/* line 278, scss/main.css */
+/* line 289, scss/main.css */
 .section-two .bottom-right-photo {
   float: right;
   background-image: url("../photos/session 2/bottom-right-photo.png");
@@ -353,7 +371,7 @@ nav {
   background-repeat: no-repeat;
   height: 200px; }
 
-/* line 285, scss/main.css */
+/* line 296, scss/main.css */
 .section-two .bottom-center-text {
   position: absolute;
   margin-top: 73.75em;
@@ -362,7 +380,7 @@ nav {
   background: #118ded;
   right: 0; }
 
-/* line 292, scss/main.css */
+/* line 303, scss/main.css */
 .section-two .bottom-center-text .bulb {
   background-image: url("../photos/session 2/bulb.png");
   background-size: cover;
@@ -372,7 +390,7 @@ nav {
   display: inline-block;
   margin: 3em 0 0 2em; }
 
-/* line 300, scss/main.css */
+/* line 311, scss/main.css */
 .section-two .bottom-center-text p {
   display: inline-block;
   margin: 0px 26em 0 8em;
@@ -384,11 +402,11 @@ nav {
   color: white;
   text-align: justify; }
 
-/* line 311, scss/main.css */
+/* line 322, scss/main.css */
 .section-numbers {
   list-style-type: none; }
 
-/* line 313, scss/main.css */
+/* line 324, scss/main.css */
 .section-numbers li {
   margin: 0 0 10px calc(50% - 12px);
   height: 100vh;
@@ -397,7 +415,7 @@ nav {
   height: 10px;
   border: 1px solid #cccccc; }
 
-/* line 320, scss/main.css */
+/* line 331, scss/main.css */
 .section-numbers .number {
   text-align: center;
   width: 41px;
@@ -410,21 +428,21 @@ nav {
   padding: calc(50% - 35px) calc(50% - 25px);
   margin: 125px 0px 10px calc(50% - 28px); }
 
-/* line 332, scss/main.css */
+/* line 343, scss/main.css */
 .section-three {
   margin-top: 16.5em; }
 
-/* line 334, scss/main.css */
+/* line 345, scss/main.css */
 .section-three .section-number {
   margin: 0.5em 0 0 0;
   position: relative;
-  z-index: 999; }
+  z-index: 10; }
 
-/* line 338, scss/main.css */
+/* line 349, scss/main.css */
 .section-three .section-number .number {
   margin: 0px 0px 10px calc(50% - 28px); }
 
-/* line 340, scss/main.css */
+/* line 351, scss/main.css */
 .section-three .team-description {
   background: #171f3e;
   height: 500px;
@@ -433,7 +451,7 @@ nav {
   width: 62%;
   color: #118ded; }
 
-/* line 347, scss/main.css */
+/* line 358, scss/main.css */
 .section-three .team-description .section-three-header {
   font-size: 30px;
   font-weight: bold;
@@ -442,7 +460,7 @@ nav {
   border-left: 8px solid #1e93ee;
   padding-left: 15px; }
 
-/* line 354, scss/main.css */
+/* line 365, scss/main.css */
 .section-three .team-description :nth-child(2) {
   margin: 6em 6em 0 24em;
   font-size: 20px;
@@ -450,12 +468,12 @@ nav {
   letter-spacing: 1px;
   line-height: 35px; }
 
-/* line 360, scss/main.css */
+/* line 371, scss/main.css */
 .section-three .number-of-employees {
   float: right;
   height: 499px; }
 
-/* line 363, scss/main.css */
+/* line 374, scss/main.css */
 .section-three .number-of-employees p {
   font-size: 25px;
   font-weight: bold;
@@ -463,11 +481,11 @@ nav {
   line-height: 30px;
   color: #171f3e; }
 
-/* line 369, scss/main.css */
+/* line 380, scss/main.css */
 .section-three .consultants-text {
   margin: 31.2em 0 0 0; }
 
-/* line 371, scss/main.css */
+/* line 382, scss/main.css */
 .section-three .consultants-text p {
   font-size: 20px;
   text-align: justify;
@@ -476,7 +494,7 @@ nav {
   margin: 4em 6em 1.6em 0.5em;
   font-weight: bold; }
 
-/* line 378, scss/main.css */
+/* line 389, scss/main.css */
 .section-three .experience-text {
   background: green;
   position: absolute;
@@ -486,14 +504,14 @@ nav {
   height: 220px;
   background: #118ded; }
 
-/* line 386, scss/main.css */
+/* line 397, scss/main.css */
 .section-three .experience-text p {
   font-size: 20px;
   color: white;
   margin: 2.5em 10.5em 0 32em;
   text-align: justify; }
 
-/* line 391, scss/main.css */
+/* line 402, scss/main.css */
 .section-three .experience-text .defense-shield {
   background-image: url("../photos/session 3/white-shield.png");
   background-size: cover;
@@ -503,7 +521,7 @@ nav {
   float: right;
   margin: -6em 3em 0 0; }
 
-/* line 399, scss/main.css */
+/* line 410, scss/main.css */
 .section-three .image-consultants {
   background-image: url("../photos/session 3/bottom-right.png");
   background-size: cover;
@@ -514,7 +532,7 @@ nav {
   right: 0;
   width: 38%; }
 
-/* line 408, scss/main.css */
+/* line 419, scss/main.css */
 .section-three .employee-image {
   background-image: url("../photos/session 3/man-photo.png");
   background-size: cover;
@@ -525,20 +543,20 @@ nav {
   position: relative;
   right: 10px; }
 
-/* line 418, scss/main.css */
+/* line 429, scss/main.css */
 .section-four {
   margin: 15.9em 0 0 0; }
 
-/* line 420, scss/main.css */
+/* line 431, scss/main.css */
 .section-four .number {
   margin: 0px 0px 10px calc(50% - 28px); }
 
-/* line 422, scss/main.css */
+/* line 433, scss/main.css */
 .section-four .section-three-header {
   background: #171f3e;
   height: 600px; }
 
-/* line 425, scss/main.css */
+/* line 436, scss/main.css */
 .section-four .section-three-header p {
   color: white;
   font-weight: bold;
@@ -548,7 +566,7 @@ nav {
   margin: 1.8em calc(50% - 95px);
   letter-spacing: 1px; }
 
-/* line 433, scss/main.css */
+/* line 444, scss/main.css */
 .section-four .section-three-header .mac-photo {
   background-image: url("../photos/session 4/MacBook.png");
   background-size: cover;
@@ -557,52 +575,62 @@ nav {
   width: 479px;
   margin: 252px 15px 8px 43px; }
 
-/* line 440, scss/main.css */
+/* line 451, scss/main.css */
 .section-four .lists .list-one,
 .section-four .lists .list-two {
   margin: 3em 0 0 10.4em;
   font-size: 22px;
   line-height: 26px; }
 
-/* line 445, scss/main.css */
+/* line 456, scss/main.css */
 .section-four .lists .list-two {
   margin: 3em 0 0 0em; }
 
-/* line 447, scss/main.css */
+/* line 458, scss/main.css */
 .section-four .lists ul li {
   color: #118ded; }
 
-/* line 449, scss/main.css */
+/* line 460, scss/main.css */
 .section-four .lists ul li span {
   color: #171f3e; }
 
-/* line 451, scss/main.css */
+/* line 462, scss/main.css */
 .section-four .references {
   float: right;
   border-right: 8px solid #1a2240;
   border-left: 8px solid #1a2240; }
 
-/* line 455, scss/main.css */
+/* line 466, scss/main.css */
 .section-four .references .logo {
   margin: calc(50% - 450px) calc(50% - 380px);
   color: #a7a8b0; }
 
-/* line 458, scss/main.css */
-.section-four .references :nth-child(2) {
+/* line 469, scss/main.css */
+.section-four .references .comp-text {
   float: right;
   margin: -10em 5em 0 25em;
   text-align: justify;
   font-style: italic;
   color: #a7a8b0; }
 
-/* line 464, scss/main.css */
-.section-four .references :nth-child(3) {
+/* line 475, scss/main.css */
+.section-four .references .comp-more {
   float: right;
-  margin: 0 5em 0 0;
+  margin: 1.5em 5em 0 0;
   font-weight: bold;
   color: #1a2240; }
 
-/* line 469, scss/main.css */
+/* line 480, scss/main.css */
+.section-four .references .comp-more:hover {
+  color: #1e93ee;
+  cursor: pointer;
+  transition: 500ms; }
+
+/* line 484, scss/main.css */
+.section-four .references .visible {
+  display: inline-block; }
+
+/* line 486, scss/main.css */
 .section-four .left-slider-btn,
 .section-four .right-slider-btn {
   text-align: center;
@@ -613,26 +641,460 @@ nav {
   color: #e0e0e0;
   display: inline-block;
   float: left;
-  margin: 3em 0 0 calc(50% + 18em);
+  margin: 3em 0 0 calc(50% + 16em);
   font-size: 25px; }
 
-/* line 481, scss/main.css */
+/* line 498, scss/main.css */
 .section-four .left-slider-btn p,
 .section-four .right-slider-btn p {
   color: #e0e0e0;
   padding: calc(50% - 20px) calc(50% - 8px); }
 
-/* line 485, scss/main.css */
+/* line 502, scss/main.css */
 .section-four .right-slider-btn {
-  margin: -40px 0 0 calc(50% + 16em); }
+  margin: -40px 0 0 calc(50% + 18em); }
 
-/* line 487, scss/main.css */
+/* line 504, scss/main.css */
 .section-four .left-slider-btn:hover,
 .section-four .right-slider-btn:hover {
   cursor: pointer;
   border: 2px solid #118ded; }
 
-/* line 491, scss/main.css */
+/* line 508, scss/main.css */
 .section-four .left-slider-btn:hover p,
 .section-four .right-slider-btn:hover p {
   color: #118ded; }
+
+/* line 512, scss/main.css */
+.section-five .section-number {
+  margin: 3.8em 0 0 0; }
+
+/* line 514, scss/main.css */
+.section-five .section-number .number {
+  margin: 0px 0px 10px calc(50% - 28px); }
+
+/* line 517, scss/main.css */
+.section-five .management-header p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 4em 0 0 0.5em;
+  border-left: 8px solid #1e93ee;
+  padding-left: 30px; }
+
+/* line 524, scss/main.css */
+.section-five .management {
+  float: right;
+  list-style-type: none;
+  margin-right: 40px;
+  margin-top: 52px; }
+
+/* line 529, scss/main.css */
+.section-five .management li {
+  display: inline-block;
+  margin: 0 10px 0 0; }
+
+/* line 532, scss/main.css */
+.section-five .management li ul {
+  list-style-type: none; }
+
+/* line 534, scss/main.css */
+.section-five .management li ul li {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 8px;
+  color: #171f3e; }
+
+/* line 540, scss/main.css */
+.section-five .management li ul :last-child {
+  font-size: 18px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: -4px; }
+
+/* line 546, scss/main.css */
+.section-five .management-first-image {
+  background-image: url("../photos/session 5/top-one-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px; }
+
+/* line 553, scss/main.css */
+.section-five .management-second-image {
+  background-image: url("../photos/session 5/top-two-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px; }
+
+/* line 560, scss/main.css */
+.section-five .management-third-image {
+  background-image: url("../photos/session 5/top-three-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px; }
+
+/* line 567, scss/main.css */
+.section-five .management-fourth-image {
+  background-image: url("../photos/session 5/top-four-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px; }
+
+/* line 574, scss/main.css */
+.section-five .managment-desc-one,
+.section-five .managment-desc-two {
+  float: right; }
+
+/* line 578, scss/main.css */
+.section-five .managment-desc-one {
+  background-image: url("../photos/session 5/bottom-right-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 490px; }
+
+/* line 584, scss/main.css */
+.section-five .managment-desc-two {
+  background-image: url("../photos/session 5/bottom-left-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 490px; }
+
+/* line 589, scss/main.css */
+.section-five .managment-desc-two :first-child {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 4em 0 0 1em; }
+
+/* line 594, scss/main.css */
+.section-five .managment-desc-two :nth-child(2),
+.section-five .managment-desc-two :nth-child(3) {
+  color: white;
+  margin: 1em 10em 0 1em;
+  font-size: 20px;
+  text-align: justify; }
+
+/* line 600, scss/main.css */
+.section-five .managment-desc-two :nth-child(3) {
+  margin: 1em 10em 0 1em; }
+
+/* line 602, scss/main.css */
+.section-five .managment-desc-two :nth-child(4) {
+  color: white;
+  margin: 9em 4.5em 0 0;
+  float: right;
+  font-weight: bold; }
+
+/* line 607, scss/main.css */
+.section-five .managment-desc-two .play-btn {
+  border: 3px solid  #1e93ee;
+  width: 30px;
+  height: 30px;
+  border-radius: 48px;
+  margin: 8.7em -7em 0 0;
+  float: right; }
+
+/* line 614, scss/main.css */
+.section-five .managment-desc-two .play-btn i {
+  margin: 4px 0 0 calc(50% - 7px);
+  transform: scale(0.5, 0.5);
+  color: #1e93ee; }
+
+/* line 619, scss/main.css */
+.section-six .section-numbers {
+  margin: -3.3em 0 0 0; }
+
+/* line 621, scss/main.css */
+.section-six .section-numbers .number {
+  margin: 0px 0px 10px calc(50% - 28px); }
+
+/* line 624, scss/main.css */
+.section-six .section-six-bg {
+  background: #1a2240;
+  width: 65%;
+  height: 540px;
+  position: absolute;
+  z-index: -1; }
+
+/* line 631, scss/main.css */
+.section-six .section-six-job-photo {
+  background-image: url("../photos/session 6/apliccation-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 110px;
+  position: relative;
+  height: 430px; }
+
+/* line 638, scss/main.css */
+.section-six .section-six-job-photo h2 {
+  font-size: 35px;
+  color: white;
+  margin: 7.5em 0 0 2em; }
+
+/* line 642, scss/main.css */
+.section-six .section-six-job-photo p {
+  margin: 0.9em 0 0 3.3em;
+  font-size: 22px;
+  color: white; }
+
+/* line 647, scss/main.css */
+.section-six .section-six-header :first-child {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin: 0.9em 0 0 0.6em;
+  border-left: 8px solid #1e93ee;
+  padding-left: 1em; }
+
+/* line 655, scss/main.css */
+.section-six .section-six-header :nth-child(2) {
+  color: #1e93ee;
+  font-size: 26px;
+  margin: 5em 0 0 -0.5em; }
+
+/* line 660, scss/main.css */
+.section-six .section-six-header :last-child {
+  color: white;
+  font-size: 22px;
+  margin: 1em 0 0 -0.5em; }
+
+/* line 665, scss/main.css */
+.section-six .tight-stripe {
+  height: 10px;
+  background: #1e93ee;
+  margin: 6.9em 0 0 0;
+  width: 49%;
+  float: right; }
+
+/* line 672, scss/main.css */
+.section-six .s7-down-arrow {
+  border-right: 2px solid #1e93ee;
+  width: 2%;
+  height: 385px;
+  margin-left: calc(50% - 190px);
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: -17px; }
+
+/* line 681, scss/main.css */
+.section-six .requirements {
+  display: inline-block;
+  bottom: 20em;
+  position: relative;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: bold; }
+
+/* line 689, scss/main.css */
+.section-six .requirements-list {
+  display: inline-block;
+  top: -13em;
+  position: relative;
+  left: -70px; }
+
+/* line 694, scss/main.css */
+.section-six .requirements-list li {
+  color: #1e93ee; }
+
+/* line 696, scss/main.css */
+.section-six .requirements-list li span {
+  color: #1a2240; }
+
+/* line 699, scss/main.css */
+.section-six .require-left-slider-btn,
+.section-six .require-right-slider-btn {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 100%;
+  color: #e0e0e0;
+  display: inline-block;
+  float: left;
+  margin: 2em 0 0 calc(50% + 2em);
+  font-size: 25px; }
+
+/* line 711, scss/main.css */
+.section-six .require-left-slider-btn p,
+.section-six .require-right-slider-btn p {
+  color: #e0e0e0;
+  padding: calc(50% - 20px) calc(50% - 8px); }
+
+/* line 716, scss/main.css */
+.section-six .require-right-slider-btn {
+  margin: -1.55em 0 0 calc(50% + 5em); }
+
+/* line 719, scss/main.css */
+.section-six .require-left-slider-btn:hover,
+.section-six .require-right-slider-btn:hover {
+  cursor: pointer;
+  border: 2px solid #118ded; }
+
+/* line 723, scss/main.css */
+.section-six .require-left-slider-btn:hover p,
+.section-six .require-right-slider-btn:hover p {
+  color: #118ded; }
+
+/* line 727, scss/main.css */
+.section-six .aplication-btn {
+  width: 325px;
+  height: 40px;
+  border: 1px solid #1a2240;
+  background: none;
+  margin: 11em 0em 0 -3em;
+  color: #1a2240;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px; }
+
+/* line 738, scss/main.css */
+.section-six .aplication-btn:hover {
+  color: white;
+  background: #1a2240;
+  transition: 500ms;
+  transform: scale(1.2, 1.2); }
+
+/* line 744, scss/main.css */
+.section-seven {
+  background: #1a2240; }
+
+/* line 746, scss/main.css */
+.section-seven .number {
+  margin: 0px 0px 10px calc(50% - 28px); }
+
+/* line 748, scss/main.css */
+.section-seven .s7-bg {
+  background-image: url("../photos/session 7/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 899px;
+  position: absolute;
+  right: 0;
+  border-left: 1px solid #1e93ee; }
+
+/* line 756, scss/main.css */
+.section-seven .form-bg {
+  background: white;
+  width: 410px;
+  height: 498px;
+  margin: 9em 0 0 3em; }
+
+/* line 761, scss/main.css */
+.section-seven .form-bg form :first-child,
+.section-seven .form-bg form input,
+.section-seven .form-bg form textarea {
+  width: 25.5em;
+  height: 3em;
+  margin-top: 3em;
+  margin-left: calc(50% - 170px);
+  border: 2px solid #cecece;
+  padding-left: 5px;
+  color: #1e93ee; }
+
+/* line 771, scss/main.css */
+.section-seven .form-bg form input {
+  margin-top: 0em; }
+
+/* line 773, scss/main.css */
+.section-seven .form-bg form textarea {
+  margin-top: 0em;
+  height: 13em; }
+
+/* line 776, scss/main.css */
+.section-seven .form-bg form label {
+  float: left;
+  display: inline-block;
+  margin: 5px 0px 5px 35px;
+  font-size: 12px;
+  color: red;
+  height: 20px;
+  width: 340px;
+  font-weight: bold; }
+
+/* line 785, scss/main.css */
+.section-seven .form-bg form .border-input {
+  border: 2px solid #1e93ee; }
+
+/* line 787, scss/main.css */
+.section-seven .form-bg .send-btn {
+  width: 200px;
+  height: 50px;
+  background: #1e93ee;
+  border: none;
+  float: right;
+  margin: 1.2em 2em 0 0;
+  color: white; }
+
+/* line 795, scss/main.css */
+.section-seven .form-bg .send-btn:hover {
+  transform: scale(1.2, 1.2);
+  transition: 500ms; }
+
+/* line 798, scss/main.css */
+.section-seven .contact {
+  border-bottom: 1px solid #1e93ee; }
+
+/* line 800, scss/main.css */
+.section-seven .contact :first-child {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin: 3.3em 0 0 0;
+  border-left: 8px solid #1e93ee;
+  padding-left: 1em; }
+
+/* line 807, scss/main.css */
+.section-seven .contact :nth-child(2) {
+  color: #66ceeb;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 7em 0 2em 0; }
+
+/* line 812, scss/main.css */
+.section-seven .contact :nth-child(3),
+.section-seven .contact :nth-child(4) {
+  color: white; }
+
+/* line 815, scss/main.css */
+.section-seven .contact :nth-child(4) {
+  margin: 0 0 1em 0; }
+
+/* line 817, scss/main.css */
+.section-seven .contact :nth-child(5),
+.section-seven .contact :nth-child(6) {
+  color: white; }
+
+/* line 820, scss/main.css */
+.section-seven .contact :nth-child(6) {
+  margin-bottom: 11.5em; }
+
+/* line 822, scss/main.css */
+.section-seven .s7-logo {
+  font-size: 40px;
+  color: #66ceeb;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 3em 0 1.5em 0; }
+
+/* line 829, scss/main.css */
+footer {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  background: #1a2240;
+  opacity: 1;
+  border-top: 1px solid #1e93ee; }
+
+/* line 837, scss/main.css */
+.footer-border {
+  border-left: 1px solid #1e93ee; }
+
+/* line 839, scss/main.css */
+.footer-border p {
+  color: #5d6171;
+  text-align: center;
+  margin: 2px 0 6px 0px; }

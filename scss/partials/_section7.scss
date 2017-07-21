@@ -1,0 +1,125 @@
+.section-seven {
+    background: #1a2240;
+    //height: 680px;
+    .number {
+        margin: 0px 0px 10px calc(50% - 28px);
+    }
+    .s7-bg {
+        background-image: url('../photos/session 7/map.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 899px;
+        position: absolute;
+        right: 0;
+        border-left: 1px solid #1e93ee;
+    }
+    .form-bg {
+        background: white;
+        width: 410px;
+        height: 498px;
+        margin: 9em 0 0 3em;
+        form {
+             :first-child,
+            input,
+            textarea {
+                width: 25.5em;
+                height: 3em;
+                margin-top: 3em;
+                margin-left: calc(50% - 170px);
+                border: 2px solid #cecece;
+                padding-left: 5px;
+                color: #1e93ee;
+            }
+            input {
+                margin-top: 0em;
+            }
+            textarea {
+                margin-top: 0em;
+                height: 13em;
+            }
+            label {
+                float: left;
+                display: inline-block;
+                margin: 5px 0px 5px 35px;
+                font-size: 12px;
+                color: red;
+                height: 20px;
+                width: 340px;
+                font-weight: bold;
+            }
+            .border-input {
+                border: 2px solid #1e93ee;
+            }
+        }
+        .send-btn {
+            width: 200px;
+            height: 50px;
+            background: #1e93ee;
+            border: none;
+            float: right;
+            margin: 1.2em 2em 0 0;
+            color: white;
+        }
+        .send-btn:hover {
+            transform: scale(1.2, 1.2);
+            transition: 500ms;
+        }
+    }
+    .contact {
+        border-bottom: 1px solid #1e93ee;
+         :first-child {
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            margin: 3.3em 0 0 0;
+            border-left: 8px solid #1e93ee;
+            padding-left: 1em;
+        }
+         :nth-child(2) {
+            color: #66ceeb;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 7em 0 2em 0;
+        }
+         :nth-child(3),
+         :nth-child(4),
+        {
+            color: white;
+        }
+         :nth-child(4) {
+            margin: 0 0 1em 0;
+        }
+         :nth-child(5),
+         :nth-child(6) {
+            color: white;
+        }
+         :nth-child(6) {
+            margin-bottom: 11.5em;
+        }
+    }
+    .s7-logo {
+        font-size: 40px;
+        color: #66ceeb;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin: 3em 0 1.5em 0;
+    }
+}
+
+footer {
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    background: #1a2240;
+    opacity: 1;
+    border-top: 1px solid #1e93ee;
+}
+
+.footer-border {
+    border-left: 1px solid #1e93ee;
+    p {
+        color: #5d6171;
+        text-align: center;
+        margin: 2px 0 6px 0px;
+    }
+}

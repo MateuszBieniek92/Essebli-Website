@@ -3,52 +3,61 @@ header {
     z-index: 999;
     color: white;
     height: 50px;
-    background: red;
     display: block;
     background: rgba(255, 255, 255, 0.0);
     position: absolute;
     width: 100%;
-}
-
-nav {
-    padding: 10px 35px;
-}
-
-.logo {
-    display: inline-block;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0 -90px;
-}
-
-.menu {
-    list-style-type: none;
-    padding: 15px 0;
-    float: right;
-    li {
-        letter-spacing: 0.2px;
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.2);
+    nav {
+        padding: 10px 35px;
+    }
+    .logo {
         display: inline-block;
-        padding-right: 20px;
-    }
-     :nth-child(7) {
-        padding-left: 20px;
-        padding-right: 10px;
-        color: #66ceeb;
+        font-size: 40px;
         font-weight: bold;
+        margin: -5px -90px;
     }
-     :nth-child(8) {
-        color: #ffffff;
-        font-weight: bold;
+    .menu {
+        list-style-type: none;
+        padding: 15px 0;
+        float: right;
+        li {
+            letter-spacing: 0.2px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding-right: 20px;
+        }
+         :nth-child(7) {
+            padding-left: 20px;
+            padding-right: 10px;
+            color: #66ceeb;
+            font-weight: bold;
+        }
+         :nth-child(8) {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        li:hover {
+            color: white;
+            cursor: pointer;
+            transition: 500ms;
+        }
+         :nth-child(7):hover,
+         :nth-child(8):hover,
+        {
+            color: #66ceeb;
+        }
     }
-    li:hover {
-        color: white;
-        cursor: pointer;
-    }
-     :nth-child(7):hover,
-    :nth-child(8):hover,
-    {
-        color: #66ceeb;
+    .sticky {
+        position: fixed;
+        width: 100%;
+        background-color: #118ded;
+        top: 0;
+        height: 50px;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.35);
+        transition: 0.4s;
+        display: inline-block;
     }
 }
