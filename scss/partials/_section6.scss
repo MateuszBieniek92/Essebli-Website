@@ -7,10 +7,13 @@
     }
     .section-six-bg {
         background: #1a2240;
-        width: 65%;
+        width: 100%;
         height: 540px;
         position: absolute;
         z-index: -1;
+        @media(min-width: 768px) {
+            width: 65%;
+        }
     }
     .section-six-job-photo {
         background-image: url('../photos/session 6/apliccation-bg.png');
@@ -22,7 +25,10 @@
         h2 {
             font-size: 35px;
             color: white;
-            margin: 7.5em 0 0 2em;
+            margin: 6.5em 0 0 2em;
+            @media(min-width: 768px) {
+                margin: 7.5em 0 0 2em;
+            }
         }
         p {
             margin: 0.9em 0 0 3.3em;
@@ -58,27 +64,37 @@
         float: right;
     }
     .s7-down-arrow {
-        border-right: 2px solid #1e93ee;
-        width: 2%;
-        height: 385px;
-        margin-left: calc(50% - 190px);
-        display: inline-block;
-        margin-top: 25px;
-        margin-bottom: -17px;
+        display: none;
+        @media(min-width: 768px) {
+            display: inline-block;
+            border-right: 2px solid #1e93ee;
+            width: 2%;
+            height: 385px;
+            margin-left: calc(50% - 190px);
+            display: inline-block;
+            margin-top: 25px;
+            margin-bottom: -17px;
+        }
     }
     .requirements {
         display: inline-block;
-        bottom: 20em;
+        bottom: 6em;
         position: relative;
         font-size: 18px;
         margin-left: 10px;
         font-weight: bold;
+        @media(min-width: 768px) {
+            bottom: 20em;
+        }
     }
     .requirements-list {
         display: inline-block;
-        top: -13em;
+        top: 2em;
         position: relative;
         left: -70px;
+        @media(min-width: 768px) {
+            top: -13em;
+        }
         li {
             color: #1e93ee;
             span {
@@ -96,8 +112,11 @@
         color: #e0e0e0;
         display: inline-block;
         float: left;
-        margin: 2em 0 0 calc(50% + 2em);
+        margin: 1em 0 0 calc(50% + 2em);
         font-size: 25px;
+        @media(min-width: 768px) {
+            margin: 2em 0 0 calc(50% + 2em);
+        }
         p {
             color: #e0e0e0;
             padding: calc(50% - 20px) calc(50% - 8px);
@@ -105,6 +124,9 @@
     }
     .require-right-slider-btn {
         margin: -1.55em 0 0 calc(50% + 5em);
+        @media(min-width: 768px) {
+            margin: -1.6em 0 0 calc(50% + 4em);
+        }
     }
     .require-left-slider-btn:hover,
     .require-right-slider-btn:hover {
@@ -119,11 +141,14 @@
         height: 40px;
         border: 1px solid #1a2240;
         background: none;
-        margin: 11em 0em 0 -3em;
+        margin: 1em 0em 1em 0.5em;
         color: #1a2240;
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 0.5px;
+        @media(min-width: 768px) {
+            margin: 11em 0em 0 -3em;
+        }
     }
     .aplication-btn:hover {
         color: white;

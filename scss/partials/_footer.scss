@@ -1,0 +1,20 @@
+footer {
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    background: #1a2240;
+    opacity: 1;
+    border-top: 1px solid #1e93ee;
+}
+
+.footer-border {
+    border-left: 1px solid #1e93ee;
+    p {
+        color: #5d6171;
+        text-align: center;
+        margin: -15px 0 0px 0px;
+        @media(min-width: 768px) {
+            margin: 2px 0 6px 0px;
+        }
+    }
+}

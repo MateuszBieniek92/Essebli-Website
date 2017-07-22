@@ -1,5 +1,9 @@
 .section-five {
     .section-number {
+        display: none;
+        @media(min-width: 768px) {
+            display: inline-block;
+        }
         margin: 3.8em 0 0 0;
         .number {
             margin: 0px 0px 10px calc(50% - 28px);
@@ -9,9 +13,12 @@
         p {
             font-size: 30px;
             font-weight: bold;
-            margin: 4em 0 0 0.5em;
+            margin: 1em 0 0 0.5em;
             border-left: 8px solid #1e93ee;
             padding-left: 30px;
+            @media(min-width: 768px) {
+                margin: 4em 0 0 0.5em;
+            }
         }
     }
     .management {
@@ -73,7 +80,7 @@
         float: right;
     }
     .managment-desc-one {
-                background-image: url('../photos/session 5/bottom-right-photo.png');
+        background-image: url('../photos/session 5/bottom-right-photo.png');
         background-size: cover;
         background-repeat: no-repeat;
         height: 490px;
@@ -92,32 +99,75 @@
          :nth-child(2),
          :nth-child(3) {
             color: white;
-            margin: 1em 10em 0 1em;
+            margin: 1em 1em 0 1em;
             font-size: 20px;
             text-align: justify;
+            @media(min-width: 768px) {
+                margin: 1em 10em 0 1em;
+            }
         }
          :nth-child(3) {
-            margin: 1em 10em 0 1em;
+            margin: 1em 1em 0 1em;
+            @media(min-width: 768px) {
+                margin: 1em 10em 0 1em;
+            }
         }
          :nth-child(4) {
             color: white;
             margin: 9em 4.5em 0 0;
             float: right;
-             font-weight: bold;
+            font-weight: bold;
         }
         .play-btn {
-            border: 3px solid  #1e93ee;
+            border: 3px solid #1e93ee;
             width: 30px;
             height: 30px;
             border-radius: 48px;
             margin: 8.7em -7em 0 0;
-            
             float: right;
             i {
                 margin: 4px 0 0 calc(50% - 7px);
                 transform: scale(0.5, 0.5);
-                color:  #1e93ee;
+                color: #1e93ee;
             }
         }
+    }
+    .top-photo-border {
+        display: none;
+        @media(min-width: 1000px) {
+            display: inline-block;
+        }
+        height: 26em;
+        width: 2px;
+        background: #118ded;
+        float: right;
+        position: relative;
+        margin: -44.5em 2em 0 0;
+        @media(min-width: 1200px) {
+            margin: -44.5em 5em 0 0;
+        }
+        @media(min-width: 1300px) {
+            margin: -44.5em 8em 0 0;
+        }
+        @media(min-width: 1400px) {
+            margin: -44.5em 11em 0 0;
+        }
+        @media(min-width: 1500px) {
+            margin: -44.5em 14em 0 0;
+        }
+        @media(min-width: 1600px) {
+            margin: -44.5em 18em 0 0;
+        }
+        @media(min-width: 1800px) {
+            margin: -44.5em 26em 0 0;
+        }
+    }
+    .left-photo-border {
+        height: 2px;
+        width: 29%;
+        background: #118ded;
+        float: left;
+        position: relative;
+        margin: -26.5em 0 0 0em;
     }
 }

@@ -1,11 +1,15 @@
 .section-four {
-    margin: 15.9em 0 0 0;
+    @media(min-width: 768px) {
+        margin: 15.9em 0 0 0;
+    }
     .number {
         margin: 0px 0px 10px calc(50% - 28px);
     }
     .section-three-header {
         background: #171f3e;
-        height: 600px;
+        @media(min-width: 768px) {
+            height: 600px;
+        }
         p {
             color: white;
             font-weight: bold;
@@ -16,23 +20,38 @@
             letter-spacing: 1px;
         }
         .mac-photo {
-            background-image: url('../photos/session 4/MacBook.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 280px;
-            width: 479px;
-            margin: 252px 15px 8px 43px;
+            display: none;
+            @media(min-width: 1100px) {
+                display: inline-block;
+                background-image: url('../photos/session 4/MacBook.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 280px;
+                width: 479px;
+                margin: 252px 15px 8px 43px;
+            }
         }
     }
     .lists {
         .list-one,
         .list-two {
-            margin: 3em 0 0 10.4em;
-            font-size: 22px;
+            margin: 0em 0 0 0.5em;
+            font-size: 18px;
             line-height: 26px;
+            @media(min-width: 768px) {
+                font-size: 22px;
+                line-height: 26px;
+                margin: 3em 0 0 4em;
+            }
+            @media(min-width: 1100px) {
+                margin: 3em 0 0 10.4em;
+            }
         }
         .list-two {
-            margin: 3em 0 0 0em;
+            margin: -1em 0 0 0.5em;
+            @media(min-width: 768px) {
+                margin: 3em 0 0 0em;
+            }
         }
         ul {
             li {
@@ -44,9 +63,17 @@
         }
     }
     .references {
-        float: right;
-        border-right: 8px solid #1a2240;
-        border-left: 8px solid #1a2240;
+        display: none;
+        @media(min-width: 1100px) {
+            margin: 4.5em 0 0 0;
+            display: inline-block;
+            float: right;
+            border-right: 8px solid #1a2240;
+            border-left: 8px solid #1a2240;
+        }
+        @media(min-width: 1200px) {
+            margin: 0;
+        }
         .logo {
             margin: calc(50% - 450px) calc(50% - 380px);
             color: #a7a8b0;
@@ -75,16 +102,20 @@
     }
     .left-slider-btn,
     .right-slider-btn {
-        text-align: center;
-        width: 40px;
-        height: 40px;
-        border: 2px solid #e0e0e0;
-        border-radius: 100%;
-        color: #e0e0e0;
-        display: inline-block;
-        float: left;
-        margin: 3em 0 0 calc(50% + 16em);
-        font-size: 25px;
+        display: none;
+        @media(min-width: 1100px) {
+            display: inline-block;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #e0e0e0;
+            border-radius: 100%;
+            color: #e0e0e0;
+            display: inline-block;
+            float: left;
+            margin: 3em 0 0 calc(50% + 16em);
+            font-size: 25px;
+        }
         p {
             color: #e0e0e0;
             padding: calc(50% - 20px) calc(50% - 8px);
