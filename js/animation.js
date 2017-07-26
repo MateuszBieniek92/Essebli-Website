@@ -1,11 +1,10 @@
 $(function () {
 
+    // devices width    
+
     const mobile = window.matchMedia("screen and (max-width: 450px)");
     const desktop = window.matchMedia("screen and (min-width: 900px)");
     const tablet = window.matchMedia("screen and (min-width: 451px) and (max-width: 899px)");
-
-    // mobile changes
-
 
     // hamburger 
 
@@ -18,9 +17,14 @@ $(function () {
 
     function toggleMenu() {
         if (navigation.css('display') === 'block') {
-            navigation.css('display', 'none');
+            navigation.slideUp();
         } else {
-            navigation.css('display', 'block');
+            navigation.slideDown().css({
+                "display": "block",
+                "width": "100vw",
+                "margin": "-0.2em 0 0 -2.2em",
+                "background": "#118ded"
+            });
         }
     }
 
@@ -103,12 +107,12 @@ $(function () {
     const $requireRightBtn = $('.require-right-slider-btn');
     $jobName.prepend('<h2>Programista Java</h2>');
     $jobName.append('<p>Consentetur adipiscing elit, sed do eiusmod tempor.</p>');
-    const tx1 = $('<li>').append('<span>Java</span>');
-    const tx2 = $('<li>').append('<span>Oracle Utilities</span>');
-    const tx3 = $('<li>').append('<span>MDM Bazy danych</span>');
-    const tx4 = $('<li>').append('<span>Kreatywność</span>');
-    const tx5 = $('<li>').append('<span>Dbałość o detale</span>');
-    const tx6 = $('<li>').append('<span>Terminowość</span>');
+    let tx1 = $('<li>').append('<span>Java</span>');
+    let tx2 = $('<li>').append('<span>Oracle Utilities</span>');
+    let tx3 = $('<li>').append('<span>MDM Bazy danych</span>');
+    let tx4 = $('<li>').append('<span>Kreatywność</span>');
+    let tx5 = $('<li>').append('<span>Dbałość o detale</span>');
+    let tx6 = $('<li>').append('<span>Terminowość</span>');
 
     $requirementsList.prepend(tx1, tx2, tx3, tx4, tx5, tx6);
 
@@ -319,12 +323,49 @@ $(function () {
 
         $(window).on('scroll', function () {
             const pix = $(document).scrollTop();
-            //            console.log('scroll: ' + pix);
+            console.log('scroll: ' + pix);
 
             if (pix > top) {
                 $sticky.addClass('sticky');
             } else {
                 $sticky.removeClass('sticky');
+            }
+            
+            // menu background with scroll
+            if (pix >= 900 && pix < 2350) {
+                $firstMenuBtn.css('color', 'rgba(255, 255, 255, 1)');
+            } else {
+                $firstMenuBtn.css('color', 'rgba(255, 255, 255, 0.2)');
+            }
+
+            if (pix >= 2350 && pix < 3375) {
+                $secondMenuBtn.css('color', 'rgba(255, 255, 255, 1)');
+            } else {
+                $secondMenuBtn.css('color', 'rgba(255, 255, 255, 0.2)');
+            }
+
+            if (pix >= 3375 && pix < 4380) {
+                $thirdMenuBtn.css('color', 'rgba(255, 255, 255, 1)');
+            } else {
+                $thirdMenuBtn.css('color', 'rgba(255, 255, 255, 0.2)');
+            }
+
+            if (pix >= 4380 && pix < 5270) {
+                $fourthMenuBtn.css('color', 'rgba(255, 255, 255, 1)');
+            } else {
+                $fourthMenuBtn.css('color', 'rgba(255, 255, 255, 0.2)');
+            }
+
+            if (pix >= 5270 && pix < 6238) {
+                $fifthMenuBtn.css('color', 'rgba(255, 255, 255, 1)');
+            } else {
+                $fifthMenuBtn.css('color', 'rgba(255, 255, 255, 0.2)');
+            }
+
+            if (pix >= 6243) {
+                $sixthMenuBtn.css('color', 'rgba(255, 255, 255, 1)');
+            } else {
+                $sixthMenuBtn.css('color', 'rgba(255, 255, 255, 0.2)');
             }
         })
     });
@@ -357,44 +398,129 @@ $(function () {
     const $fifthMenuBtn = $ul.children().eq(4);
     const $sixthMenuBtn = $ul.children().eq(5);
 
-
-    $headBtn.on('click', function () {
-        $('html, body').animate({
-            scrollTop: 900
-        }, 2000);
-    });
-    $firstMenuBtn.on('click', function () {
-        $('html, body').animate({
-            scrollTop: 900
-        }, 2000);
-    });
-    $secondMenuBtn.on('click', function () {
-        $('html, body').animate({
-            scrollTop: 2350
-        }, 2000);
-    });
-    $thirdMenuBtn.on('click', function () {
-        $('html, body').animate({
-            scrollTop: 3375
-        }, 2000);
-    });
-    $fourthMenuBtn.on('click', function () {
-        $('html, body').animate({
-            scrollTop: 4380
-        }, 2000);
-    });
-    $fifthMenuBtn.on('click', function () {
-        $('html, body').animate({
-            scrollTop: 5270
-        }, 2000);
-    });
-    $sixthMenuBtn.on('click', function () {
-        $('html, body').animate({
-            scrollTop: 6281
-        }, 2000);
-    });
-
-
+    if (mobile.matches) {
+        $firstMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 1280
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $secondMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 3320
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $thirdMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 4760
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $fourthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 5660
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $fifthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 7660
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $sixthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 8847
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+    } else if (tablet.matches) {
+        $firstMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 940
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $secondMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 3480
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $thirdMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 8179
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $fourthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 5420
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $fifthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 7660
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+        $sixthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 8847
+            }, 1000);
+            navigation.slideUp();
+            hamburgerBtn.toggleClass('change');
+        });
+    } else if (desktop.matches) {
+        $headBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 900
+            }, 1000);
+        });
+        $firstMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 900
+            }, 1000);
+        });
+        $secondMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 2350
+            }, 1000);
+        });
+        $thirdMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 3375
+            }, 1000);
+        });
+        $fourthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 4380
+            }, 1000);
+        });
+        $fifthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 5270
+            }, 1000);
+        });
+        $sixthMenuBtn.on('click', function () {
+            $('html, body').animate({
+                scrollTop: 6281
+            }, 1000);
+        });
+    }
 
     requireRightButton();
     requireLeftButton();

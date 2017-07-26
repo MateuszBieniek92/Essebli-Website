@@ -92,6 +92,8 @@
         }
     }
     .down-arrow:hover {
+        transition: 500ms;
+        transform: scale(1.2, 1.2) rotate(90deg);
         cursor: pointer;
         border: none;
         background: white;

@@ -55,10 +55,11 @@
          :nth-child(2) {
             margin: 1em 1em 0 1em;
             font-size: 20px;
-            text-align: justify;
+            text-align: center;
             letter-spacing: 1px;
             line-height: 35px;
             @media(min-width: 768px) {
+                text-align: justify;
                 margin: 4em 4em 0 calc(50% - 8em);
             }
             @media(min-width: 1000px) {
@@ -104,12 +105,13 @@
         }
         p {
             font-size: 20px;
-            text-align: justify;
+            text-align: center;
             letter-spacing: 1px;
             line-height: 35px;
             margin: 1em 1em 0em 1em;
             font-weight: bold;
             @media(min-width: 768px) {
+                text-align: justify;
                 margin: 4em 6em 1.6em 0.5em;
             }
         }
@@ -130,8 +132,9 @@
             font-size: 20px;
             color: white;
             margin: 8em 1em 2em 1em;
-            text-align: justify;
+            text-align: center;
             @media(min-width: 750px) {
+                text-align: justify;
                 margin: 1em 10em 2em 4em;
             }
             @media(min-width: 1000px) {

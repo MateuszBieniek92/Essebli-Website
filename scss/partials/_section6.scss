@@ -25,15 +25,22 @@
         h2 {
             font-size: 35px;
             color: white;
-            margin: 6.5em 0 0 2em;
+            margin: 6.5em 0 0 0em;
+            text-align: center;
             @media(min-width: 768px) {
+                text-align: start;
                 margin: 7.5em 0 0 2em;
             }
         }
         p {
-            margin: 0.9em 0 0 3.3em;
+            text-align: center;
+            margin: 0.9em 0 0 0em;
             font-size: 22px;
             color: white;
+            @media(min-width: 768px) {
+                text-align: start;
+                margin: 0.9em 0 0 3.3em;
+            }
         }
     }
     .section-six-header {
@@ -49,11 +56,19 @@
             color: #1e93ee;
             font-size: 26px;
             margin: 5em 0 0 -0.5em;
+            text-align: center;
+            @media(min-width: 768px) {
+                text-align: justify;
+            }
         }
          :last-child {
             color: white;
             font-size: 22px;
             margin: 1em 0 0 -0.5em;
+            text-align: center;
+            @media(min-width: 768px) {
+                text-align: justify;
+            }
         }
     }
     .tight-stripe {

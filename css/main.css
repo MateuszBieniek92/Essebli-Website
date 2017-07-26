@@ -103,39 +103,51 @@ header .logo {
 
 /* line 80, scss/main.css */
 header .menu {
-  display: none; }
+  display: none;
+  margin: 8px 0;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  padding-top: 2px; }
 
 @media (min-width: 900px) {
-  /* line 83, scss/main.css */
+  /* line 89, scss/main.css */
   header .menu {
+    border: none;
     list-style-type: none;
-    padding: 15px 0;
+    padding: 0;
     float: right;
     display: inline-block; } }
 
-/* line 88, scss/main.css */
+/* line 95, scss/main.css */
 header .menu li {
+  padding-right: 20px;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   text-align: center;
   margin: 10px 0;
   letter-spacing: 0.2px;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.2);
-  padding-right: 20px;
-  display: block; }
+  padding: 10px 0; }
 
 @media (min-width: 900px) {
-  /* line 97, scss/main.css */
+  /* line 105, scss/main.css */
   header .menu li {
+    padding: 0;
+    border: none;
+    color: rgba(255, 255, 255, 0.2);
     font-size: 14px;
     margin: 0;
-    display: inline-block; } }
+    display: inline-block;
+    padding-right: 5px; } }
 
-/* line 101, scss/main.css */
+/* line 113, scss/main.css */
 header .menu :nth-child(7) {
   display: none; }
 
 @media (min-width: 900px) {
-  /* line 104, scss/main.css */
+  /* line 116, scss/main.css */
   header .menu :nth-child(7) {
     padding-left: 20px;
     padding-right: 10px;
@@ -143,12 +155,12 @@ header .menu :nth-child(7) {
     font-weight: bold;
     display: inline-block; } }
 
-/* line 110, scss/main.css */
+/* line 122, scss/main.css */
 header .menu :nth-child(8) {
   display: none; }
 
 @media (min-width: 900px) {
-  /* line 113, scss/main.css */
+  /* line 125, scss/main.css */
   header .menu :nth-child(8) {
     padding-left: 20px;
     padding-right: 10px;
@@ -156,7 +168,7 @@ header .menu :nth-child(8) {
     font-weight: bold;
     display: inline-block; } }
 
-/* line 119, scss/main.css */
+/* line 131, scss/main.css */
 header .menu li:hover {
   color: #66ceeb;
   background: rgba(255, 255, 255, 0.2);
@@ -164,17 +176,17 @@ header .menu li:hover {
   transition: 500ms; }
 
 @media (min-width: 900px) {
-  /* line 125, scss/main.css */
+  /* line 137, scss/main.css */
   header .menu li:hover {
     color: white;
     background: none; } }
 
-/* line 128, scss/main.css */
+/* line 140, scss/main.css */
 header .menu :nth-child(7):hover,
 header .menu :nth-child(8):hover {
   color: #66ceeb; }
 
-/* line 131, scss/main.css */
+/* line 143, scss/main.css */
 header .sticky {
   position: fixed;
   width: 100%;
@@ -188,11 +200,11 @@ header .sticky {
   display: inline-block; }
 
 @media (min-width: 900px) {
-  /* line 143, scss/main.css */
+  /* line 155, scss/main.css */
   header .sticky {
     height: 50px; } }
 
-/* line 145, scss/main.css */
+/* line 157, scss/main.css */
 header .border-menu {
   width: 50.2%;
   height: 1%;
@@ -201,7 +213,7 @@ header .border-menu {
   float: right;
   margin-top: -0.6em; }
 
-/* line 153, scss/main.css */
+/* line 165, scss/main.css */
 .hamburger {
   display: inline-block;
   float: right;
@@ -210,11 +222,11 @@ header .border-menu {
   right: 30px; }
 
 @media (min-width: 900px) {
-  /* line 160, scss/main.css */
+  /* line 172, scss/main.css */
   .hamburger {
     display: none; } }
 
-/* line 163, scss/main.css */
+/* line 175, scss/main.css */
 .bar1,
 .bar2,
 .bar3 {
@@ -224,67 +236,67 @@ header .border-menu {
   margin: 6px 0;
   transition: 0.4s; }
 
-/* line 172, scss/main.css */
+/* line 184, scss/main.css */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px); }
 
-/* line 176, scss/main.css */
+/* line 188, scss/main.css */
 .change .bar2 {
   opacity: 0; }
 
-/* line 179, scss/main.css */
+/* line 191, scss/main.css */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
 
 @media only screen and (max-width: 768px) {
-  /* line 184, scss/main.css */
+  /* line 196, scss/main.css */
   .col-1 {
     width: 100%; }
-  /* line 186, scss/main.css */
+  /* line 198, scss/main.css */
   .col-2 {
     width: 100%; }
-  /* line 188, scss/main.css */
+  /* line 200, scss/main.css */
   .col-3 {
     width: 100%; }
-  /* line 190, scss/main.css */
+  /* line 202, scss/main.css */
   .col-4 {
     width: 100%; }
-  /* line 192, scss/main.css */
+  /* line 204, scss/main.css */
   .col-5 {
     width: 100%; }
-  /* line 194, scss/main.css */
+  /* line 206, scss/main.css */
   .col-6 {
     width: 100%; }
-  /* line 196, scss/main.css */
+  /* line 208, scss/main.css */
   .col-7 {
     width: 100%; }
-  /* line 198, scss/main.css */
+  /* line 210, scss/main.css */
   .col-8 {
     width: 100%; }
-  /* line 200, scss/main.css */
+  /* line 212, scss/main.css */
   .col-9 {
     width: 100%; }
-  /* line 202, scss/main.css */
+  /* line 214, scss/main.css */
   .col-10 {
     width: 100%; }
-  /* line 204, scss/main.css */
+  /* line 216, scss/main.css */
   .col-11 {
     width: 100%; }
-  /* line 206, scss/main.css */
+  /* line 218, scss/main.css */
   .col-12 {
     width: 100%; }
-  /* line 208, scss/main.css */
+  /* line 220, scss/main.css */
   [class*="col-"] {
     width: 100%; } }
 
-/* line 211, scss/main.css */
+/* line 223, scss/main.css */
 .section-one .left-panel {
   display: none; }
 
 @media (min-width: 1000px) {
-  /* line 214, scss/main.css */
+  /* line 226, scss/main.css */
   .section-one .left-panel {
     display: inline-block;
     background-color: #118ded;
@@ -297,7 +309,7 @@ header .border-menu {
     z-index: 100; } }
 
 @media (min-width: 1000px) {
-  /* line 225, scss/main.css */
+  /* line 237, scss/main.css */
   .section-one .left-panel .big-logo {
     font-size: 6.77em;
     font-weight: bold;
@@ -307,79 +319,79 @@ header .border-menu {
     width: 100%; } }
 
 @media (min-width: 1100px) {
-  /* line 233, scss/main.css */
+  /* line 245, scss/main.css */
   .section-one .left-panel .big-logo {
     font-size: 7.3em;
     margin-top: 4.4em; } }
 
 @media (min-width: 1200px) {
-  /* line 237, scss/main.css */
+  /* line 249, scss/main.css */
   .section-one .left-panel .big-logo {
     font-size: 8em;
     margin-top: 3.8em; } }
 
 @media (min-width: 1300px) {
-  /* line 241, scss/main.css */
+  /* line 253, scss/main.css */
   .section-one .left-panel .big-logo {
     font-size: 8.5em;
     margin-top: 3.6em; } }
 
 @media (min-width: 1400px) {
-  /* line 245, scss/main.css */
+  /* line 257, scss/main.css */
   .section-one .left-panel .big-logo {
     font-size: 9.5em;
     margin-top: 3em; } }
 
 @media (min-width: 1500px) {
-  /* line 249, scss/main.css */
+  /* line 261, scss/main.css */
   .section-one .left-panel .big-logo {
     font-size: 10.5em;
     margin-top: 2.5em; } }
 
 @media (min-width: 1700px) {
-  /* line 253, scss/main.css */
+  /* line 265, scss/main.css */
   .section-one .left-panel .big-logo {
     font-size: 11.77em;
     margin-top: 1.9em; } }
 
 @media (min-width: 1000px) {
-  /* line 257, scss/main.css */
+  /* line 269, scss/main.css */
   .section-one .left-panel .big-logo :first-child {
     float: right;
     margin-right: -0.15em; } }
 
 @media (min-width: 1200px) {
-  /* line 261, scss/main.css */
+  /* line 273, scss/main.css */
   .section-one .left-panel .big-logo :first-child {
     margin-right: -0.14em; } }
 
 @media (min-width: 1300px) {
-  /* line 264, scss/main.css */
+  /* line 276, scss/main.css */
   .section-one .left-panel .big-logo :first-child {
     margin-right: -0.12em; } }
 
 @media (min-width: 1500px) {
-  /* line 267, scss/main.css */
+  /* line 279, scss/main.css */
   .section-one .left-panel .big-logo :first-child {
     margin-right: -0.11em; } }
 
 @media (min-width: 1000px) {
-  /* line 270, scss/main.css */
+  /* line 282, scss/main.css */
   .section-one .left-panel .big-logo :nth-child(2) {
     margin-top: -0.35em;
     margin-left: -0.16em; } }
 
 @media (min-width: 1500px) {
-  /* line 274, scss/main.css */
+  /* line 286, scss/main.css */
   .section-one .left-panel .big-logo :nth-child(2) {
     margin-left: -0.11em; } }
 
-/* line 277, scss/main.css */
+/* line 289, scss/main.css */
 .section-one .down-arrow {
   display: none; }
 
 @media (min-width: 1300px) {
-  /* line 280, scss/main.css */
+  /* line 292, scss/main.css */
   .section-one .down-arrow {
     transform: rotate(90deg);
     text-align: center;
@@ -393,27 +405,29 @@ header .border-menu {
     margin: -4.5em 0 0 calc(50% + 5em);
     font-size: 25px; } }
 
-/* line 292, scss/main.css */
+/* line 304, scss/main.css */
 .section-one .down-arrow p {
   color: white;
   padding: calc(50% - 20px) calc(50% - 20px); }
 
-/* line 296, scss/main.css */
+/* line 308, scss/main.css */
 .section-one .down-arrow:hover {
+  transition: 500ms;
+  transform: scale(1.2, 1.2) rotate(90deg);
   cursor: pointer;
   border: none;
   background: white; }
 
-/* line 300, scss/main.css */
+/* line 314, scss/main.css */
 .section-one .down-arrow:hover p {
   color: #118ded; }
 
-/* line 303, scss/main.css */
+/* line 317, scss/main.css */
 .section-one .down-arrow-line {
   display: none; }
 
 @media (min-width: 1300px) {
-  /* line 306, scss/main.css */
+  /* line 320, scss/main.css */
   .section-one .down-arrow-line {
     display: inline-block;
     border-right: 0.5px solid white;
@@ -426,11 +440,11 @@ header .border-menu {
     overflow: hidden; } }
 
 @media (min-width: 1800px) {
-  /* line 317, scss/main.css */
+  /* line 331, scss/main.css */
   .section-one .down-arrow-line {
     height: 21.9%; } }
 
-/* line 320, scss/main.css */
+/* line 334, scss/main.css */
 .section-one .right-panel {
   height: 100vh;
   width: 100%;
@@ -442,11 +456,11 @@ header .border-menu {
   position: relative; }
 
 @media (min-width: 1000px) {
-  /* line 330, scss/main.css */
+  /* line 344, scss/main.css */
   .section-one .right-panel {
     width: 73%; } }
 
-/* line 332, scss/main.css */
+/* line 346, scss/main.css */
 .section-one .right-panel .main-text {
   color: white;
   position: relative;
@@ -459,18 +473,18 @@ header .border-menu {
   letter-spacing: 0.5px; }
 
 @media (min-width: 450px) {
-  /* line 343, scss/main.css */
+  /* line 357, scss/main.css */
   .section-one .right-panel .main-text {
     font-size: 22px; } }
 
 @media (min-width: 1000px) {
-  /* line 346, scss/main.css */
+  /* line 360, scss/main.css */
   .section-one .right-panel .main-text {
     float: none;
     font-size: 27px;
     margin-left: 14em; } }
 
-/* line 350, scss/main.css */
+/* line 364, scss/main.css */
 .section-one .right-panel h2 {
   position: relative;
   z-index: 900;
@@ -482,12 +496,12 @@ header .border-menu {
   float: right; }
 
 @media (min-width: 600px) {
-  /* line 360, scss/main.css */
+  /* line 374, scss/main.css */
   .section-one .right-panel h2 {
     font-size: 30px; } }
 
 @media (min-width: 1000px) {
-  /* line 363, scss/main.css */
+  /* line 377, scss/main.css */
   .section-one .right-panel h2 {
     float: none;
     font-size: 32px;
@@ -495,7 +509,7 @@ header .border-menu {
     margin-left: 0;
     text-align: left; } }
 
-/* line 369, scss/main.css */
+/* line 383, scss/main.css */
 .section-one .right-panel .right-arrow-line {
   border-bottom: 0.5px solid white;
   width: 60%;
@@ -507,13 +521,13 @@ header .border-menu {
   float: right; }
 
 @media (min-width: 1000px) {
-  /* line 379, scss/main.css */
+  /* line 393, scss/main.css */
   .section-one .right-panel .right-arrow-line {
     left: -4.5em;
     margin: 0.4em 0 0 0;
     float: none; } }
 
-/* line 384, scss/main.css */
+/* line 398, scss/main.css */
 .section-one .right-panel:before {
   content: '';
   background: #118ded;
@@ -527,7 +541,7 @@ header .border-menu {
   top: 0;
   left: 0; }
 
-/* line 397, scss/main.css */
+/* line 411, scss/main.css */
 .section-one .bg-gradient:before {
   content: '';
   background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 78%, rgba(125, 185, 232, 0.09) 85%, #2373c3 100%);
@@ -540,16 +554,16 @@ header .border-menu {
   bottom: 0;
   left: 0; }
 
-/* line 409, scss/main.css */
+/* line 423, scss/main.css */
 .section-two .section-two-header {
   background: #171f3e; }
 
 @media (min-width: 768px) {
-  /* line 412, scss/main.css */
+  /* line 426, scss/main.css */
   .section-two .section-two-header {
     height: 610px; } }
 
-/* line 414, scss/main.css */
+/* line 428, scss/main.css */
 .section-two .section-two-header p {
   color: white;
   font-weight: bold;
@@ -559,31 +573,32 @@ header .border-menu {
   margin: 6.5em calc(50% - 90px);
   letter-spacing: 1px; }
 
-/* line 423, scss/main.css */
+/* line 437, scss/main.css */
 .section-two .top-left-photo {
   background-image: url("../photos/session 2/top-left-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 390px; }
 
-/* line 429, scss/main.css */
+/* line 443, scss/main.css */
 .section-two .top-right-text,
 .section-two .center-text,
 .section-two .center-right-text,
 .section-two .bottom-left-text {
   font-size: 20px;
   line-height: 1.2;
-  text-align: justify; }
+  text-align: center; }
 
 @media (min-width: 768px) {
-  /* line 437, scss/main.css */
+  /* line 451, scss/main.css */
   .section-two .top-right-text,
   .section-two .center-text,
   .section-two .center-right-text,
   .section-two .bottom-left-text {
-    height: 390px; } }
+    height: 390px;
+    text-align: justify; } }
 
-/* line 442, scss/main.css */
+/* line 457, scss/main.css */
 .section-two .top-right-text p,
 .section-two .center-text p,
 .section-two .center-right-text p,
@@ -592,34 +607,34 @@ header .border-menu {
   margin: 1em 1em 0 1em; }
 
 @media (min-width: 768px) {
-  /* line 449, scss/main.css */
+  /* line 464, scss/main.css */
   .section-two .top-right-text p,
   .section-two .center-text p,
   .section-two .center-right-text p,
   .section-two .bottom-left-text p {
     margin: 12em 1em 0 1em; } }
 
-/* line 455, scss/main.css */
+/* line 470, scss/main.css */
 .section-two .top-right-text p {
   margin: 1em 1em 0 1em; }
 
 @media (min-width: 768px) {
-  /* line 458, scss/main.css */
+  /* line 473, scss/main.css */
   .section-two .top-right-text p {
     margin: 8em 1em 0 1em; } }
 
-/* line 461, scss/main.css */
+/* line 476, scss/main.css */
 .section-two .center-right-photo {
   background-image: url("../photos/session 2/center-right-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 390px; }
 
-/* line 467, scss/main.css */
+/* line 482, scss/main.css */
 .section-two .center-text p {
   margin: 1em 1em 0 1em; }
 
-/* line 470, scss/main.css */
+/* line 485, scss/main.css */
 .section-two .center-left-photo {
   width: 100%;
   float: right;
@@ -629,57 +644,57 @@ header .border-menu {
   height: 200px; }
 
 @media (min-width: 768px) {
-  /* line 478, scss/main.css */
+  /* line 493, scss/main.css */
   .section-two .center-left-photo {
     width: 55%; } }
 
-/* line 481, scss/main.css */
+/* line 496, scss/main.css */
 .section-two .center-right-text,
 .section-two .bottom-left-text {
   float: right;
   height: 200px; }
 
-/* line 485, scss/main.css */
+/* line 500, scss/main.css */
 .section-two .center-right-text p,
 .section-two .bottom-left-text p {
   margin: 1.5em 1em 0 1em; }
 
 @media (min-width: 450px) {
-  /* line 489, scss/main.css */
+  /* line 504, scss/main.css */
   .section-two .center-right-text p,
-  .section-two .bottom-left-text p {
-    margin: 2.5em 1em 0 1em; } }
-
-@media (min-width: 768px) {
-  /* line 493, scss/main.css */
-  .section-two .center-right-text p,
-  .section-two .bottom-left-text p {
-    margin: 1em 1em 0 1em; } }
-
-/* line 497, scss/main.css */
-.section-two .bottom-left-text {
-  width: 100%; }
-
-@media (min-width: 768px) {
-  /* line 500, scss/main.css */
-  .section-two .bottom-left-text {
-    width: 55%; } }
-
-/* line 502, scss/main.css */
-.section-two .bottom-left-text p {
-  margin: 1.5em 1em 0 1em; }
-
-@media (min-width: 450px) {
-  /* line 505, scss/main.css */
   .section-two .bottom-left-text p {
     margin: 2.5em 1em 0 1em; } }
 
 @media (min-width: 768px) {
   /* line 508, scss/main.css */
+  .section-two .center-right-text p,
+  .section-two .bottom-left-text p {
+    margin: 1em 1em 0 1em; } }
+
+/* line 512, scss/main.css */
+.section-two .bottom-left-text {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  /* line 515, scss/main.css */
+  .section-two .bottom-left-text {
+    width: 55%; } }
+
+/* line 517, scss/main.css */
+.section-two .bottom-left-text p {
+  margin: 1.5em 1em 0 1em; }
+
+@media (min-width: 450px) {
+  /* line 520, scss/main.css */
+  .section-two .bottom-left-text p {
+    margin: 2.5em 1em 0 1em; } }
+
+@media (min-width: 768px) {
+  /* line 523, scss/main.css */
   .section-two .bottom-left-text p {
     margin: 2em 6em 0 6em; } }
 
-/* line 511, scss/main.css */
+/* line 526, scss/main.css */
 .section-two .bottom-right-photo {
   float: right;
   background-image: url("../photos/session 2/bottom-right-photo.png");
@@ -687,21 +702,21 @@ header .border-menu {
   background-repeat: no-repeat;
   height: 200px; }
 
-/* line 518, scss/main.css */
+/* line 533, scss/main.css */
 .section-two .bottom-center-text {
   max-width: 100%;
   background: #118ded;
   right: 0; }
 
 @media (min-width: 768px) {
-  /* line 523, scss/main.css */
+  /* line 538, scss/main.css */
   .section-two .bottom-center-text {
     position: absolute;
     margin-top: 73.75em;
     height: 265px;
     max-width: 73.5%; } }
 
-/* line 528, scss/main.css */
+/* line 543, scss/main.css */
 .section-two .bottom-center-text .bulb {
   margin: 3em 0em 0 calc(50% - 3em);
   background-image: url("../photos/session 2/bulb.png");
@@ -712,43 +727,43 @@ header .border-menu {
   display: inline-block; }
 
 @media (min-width: 768px) {
-  /* line 537, scss/main.css */
+  /* line 552, scss/main.css */
   .section-two .bottom-center-text .bulb {
     margin: 3em 0 0 2em; } }
 
-/* line 539, scss/main.css */
+/* line 554, scss/main.css */
 .section-two .bottom-center-text p {
   display: inline-block;
   margin: 1em 1em 2em 1em;
   position: relative;
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   letter-spacing: 1px;
-  color: white;
-  text-align: justify; }
+  color: white; }
 
 @media (min-width: 768px) {
-  /* line 549, scss/main.css */
+  /* line 563, scss/main.css */
   .section-two .bottom-center-text p {
+    text-align: justify;
     margin: 0px 26em 0 8em;
     top: -6.5em; } }
 
-/* line 553, scss/main.css */
+/* line 568, scss/main.css */
 .section-number {
   display: none; }
 
 @media (min-width: 900px) {
-  /* line 556, scss/main.css */
+  /* line 571, scss/main.css */
   .section-number {
     list-style-type: none;
     display: inline-block; } }
 
-/* line 560, scss/main.css */
+/* line 575, scss/main.css */
 .section-numbers {
   list-style-type: none;
   display: inline-block; }
 
-/* line 563, scss/main.css */
+/* line 578, scss/main.css */
 .section-numbers li {
   margin: 0 0 10px calc(50% - 12px);
   height: 100vh;
@@ -757,7 +772,7 @@ header .border-menu {
   height: 10px;
   border: 1px solid #cccccc; }
 
-/* line 570, scss/main.css */
+/* line 585, scss/main.css */
 .section-numbers .number {
   text-align: center;
   width: 41px;
@@ -771,27 +786,27 @@ header .border-menu {
   margin: 125px 0px 10px calc(50% - 28px); }
 
 @media (min-width: 768px) {
-  /* line 583, scss/main.css */
+  /* line 598, scss/main.css */
   .section-three {
     margin-top: 16.5em; } }
 
-/* line 586, scss/main.css */
+/* line 601, scss/main.css */
 .section-three .section-number {
   display: none; }
 
 @media (min-width: 768px) {
-  /* line 589, scss/main.css */
+  /* line 604, scss/main.css */
   .section-three .section-number {
     margin: 0.5em 0 0 0;
     position: relative;
     z-index: 10;
     display: inline-block; } }
 
-/* line 594, scss/main.css */
+/* line 609, scss/main.css */
 .section-three .section-number .number {
   margin: 0px 0px 10px calc(50% - 28px); }
 
-/* line 597, scss/main.css */
+/* line 612, scss/main.css */
 .section-three .team-description {
   background: #171f3e;
   margin: -2px 0 0 0;
@@ -800,14 +815,14 @@ header .border-menu {
   color: #118ded; }
 
 @media (min-width: 768px) {
-  /* line 604, scss/main.css */
+  /* line 619, scss/main.css */
   .section-three .team-description {
     height: 500px;
     margin: 0;
     width: 62%;
     position: absolute; } }
 
-/* line 609, scss/main.css */
+/* line 624, scss/main.css */
 .section-three .team-description .section-three-header {
   font-size: 30px;
   font-weight: bold;
@@ -817,90 +832,91 @@ header .border-menu {
   padding-left: 15px; }
 
 @media (min-width: 768px) {
-  /* line 617, scss/main.css */
+  /* line 632, scss/main.css */
   .section-three .team-description .section-three-header {
     margin: 1em 6em 0 4em; } }
 
 @media (min-width: 1000px) {
-  /* line 620, scss/main.css */
+  /* line 635, scss/main.css */
   .section-three .team-description .section-three-header {
     margin: 1em 6em 0 4em; } }
 
 @media (min-width: 1150px) {
-  /* line 623, scss/main.css */
+  /* line 638, scss/main.css */
   .section-three .team-description .section-three-header {
     margin: 1em 6em 0 8em; } }
 
 @media (min-width: 1400px) {
-  /* line 626, scss/main.css */
+  /* line 641, scss/main.css */
   .section-three .team-description .section-three-header {
     margin: 1em 6em 0 12em; } }
 
 @media (min-width: 1600px) {
-  /* line 629, scss/main.css */
+  /* line 644, scss/main.css */
   .section-three .team-description .section-three-header {
     margin: 1em 6em 0 14em; } }
 
 @media (min-width: 1800px) {
-  /* line 632, scss/main.css */
+  /* line 647, scss/main.css */
   .section-three .team-description .section-three-header {
     margin: 1em 6em 0 17em; } }
 
-/* line 634, scss/main.css */
+/* line 649, scss/main.css */
 .section-three .team-description :nth-child(2) {
   margin: 1em 1em 0 1em;
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1px;
   line-height: 35px; }
 
 @media (min-width: 768px) {
-  /* line 641, scss/main.css */
+  /* line 656, scss/main.css */
   .section-three .team-description :nth-child(2) {
+    text-align: justify;
     margin: 4em 4em 0 calc(50% - 8em); } }
 
 @media (min-width: 1000px) {
-  /* line 644, scss/main.css */
+  /* line 660, scss/main.css */
   .section-three .team-description :nth-child(2) {
     margin: 4em 4em 0 calc(50% - 11em); } }
 
 @media (min-width: 1200px) {
-  /* line 647, scss/main.css */
+  /* line 663, scss/main.css */
   .section-three .team-description :nth-child(2) {
     margin: 4em 4em 0 calc(50% - 12em); } }
 
 @media (min-width: 1300px) {
-  /* line 650, scss/main.css */
+  /* line 666, scss/main.css */
   .section-three .team-description :nth-child(2) {
     margin: 4em 4em 0 calc(50% - 10em); } }
 
 @media (min-width: 1400px) {
-  /* line 653, scss/main.css */
+  /* line 669, scss/main.css */
   .section-three .team-description :nth-child(2) {
     margin: 6em 6em 0 calc(50% - 9em); } }
 
 @media (min-width: 1500px) {
-  /* line 656, scss/main.css */
+  /* line 672, scss/main.css */
   .section-three .team-description :nth-child(2) {
     margin: 6em 6em 0 calc(50% - 7em); } }
 
 @media (min-width: 1800px) {
-  /* line 659, scss/main.css */
+  /* line 675, scss/main.css */
   .section-three .team-description :nth-child(2) {
     margin: 6em 6em 0 calc(50% - 5em); } }
 
-/* line 662, scss/main.css */
+/* line 678, scss/main.css */
 .section-three .number-of-employees {
   display: none; }
 
 @media (min-width: 768px) {
-  /* line 665, scss/main.css */
+  /* line 681, scss/main.css */
   .section-three .number-of-employees {
     float: right;
     height: 499px;
     display: inline-block; } }
 
-/* line 669, scss/main.css */
+/* line 685, scss/main.css */
 .section-three .number-of-employees p {
   font-size: 25px;
   font-weight: bold;
@@ -908,30 +924,31 @@ header .border-menu {
   line-height: 30px;
   color: #171f3e; }
 
-/* line 676, scss/main.css */
+/* line 692, scss/main.css */
 .section-three .consultants-text {
   margin: 0 0 0em 0; }
 
 @media (min-width: 768px) {
-  /* line 679, scss/main.css */
+  /* line 695, scss/main.css */
   .section-three .consultants-text {
     margin: 31.2em 0 0 0; } }
 
-/* line 681, scss/main.css */
+/* line 697, scss/main.css */
 .section-three .consultants-text p {
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1px;
   line-height: 35px;
   margin: 1em 1em 0em 1em;
   font-weight: bold; }
 
 @media (min-width: 768px) {
-  /* line 689, scss/main.css */
+  /* line 705, scss/main.css */
   .section-three .consultants-text p {
+    text-align: justify;
     margin: 4em 6em 1.6em 0.5em; } }
 
-/* line 692, scss/main.css */
+/* line 709, scss/main.css */
 .section-three .experience-text {
   margin: 0 0 0 0;
   left: 0;
@@ -939,7 +956,7 @@ header .border-menu {
   background: #118ded; }
 
 @media (min-width: 768px) {
-  /* line 698, scss/main.css */
+  /* line 715, scss/main.css */
   .section-three .experience-text {
     width: 81%;
     position: absolute;
@@ -947,39 +964,40 @@ header .border-menu {
     height: 220px;
     /* margin: 49.2em 0 0 0; */ } }
 
-/* line 704, scss/main.css */
+/* line 721, scss/main.css */
 .section-three .experience-text p {
   font-size: 20px;
   color: white;
   margin: 8em 1em 2em 1em;
-  text-align: justify; }
+  text-align: center; }
 
 @media (min-width: 750px) {
-  /* line 710, scss/main.css */
+  /* line 727, scss/main.css */
   .section-three .experience-text p {
+    text-align: justify;
     margin: 1em 10em 2em 4em; } }
 
 @media (min-width: 1000px) {
-  /* line 713, scss/main.css */
+  /* line 731, scss/main.css */
   .section-three .experience-text p {
     margin: 3em 11em 2em 5em; } }
 
 @media (min-width: 1200px) {
-  /* line 716, scss/main.css */
+  /* line 734, scss/main.css */
   .section-three .experience-text p {
     margin: 3em 11em 2em 8em; } }
 
 @media (min-width: 1400px) {
-  /* line 719, scss/main.css */
+  /* line 737, scss/main.css */
   .section-three .experience-text p {
     margin: 2.5em 10.5em 0 18em; } }
 
 @media (min-width: 1700px) {
-  /* line 722, scss/main.css */
+  /* line 740, scss/main.css */
   .section-three .experience-text p {
     margin: 2.5em 10.5em 0 32em; } }
 
-/* line 724, scss/main.css */
+/* line 742, scss/main.css */
 .section-three .experience-text .defense-shield {
   background-image: url("../photos/session 3/white-shield.png");
   background-size: cover;
@@ -990,41 +1008,41 @@ header .border-menu {
   margin: -21em calc(50% - 3em) 0 0; }
 
 @media (min-width: 450px) {
-  /* line 733, scss/main.css */
+  /* line 751, scss/main.css */
   .section-three .experience-text .defense-shield {
     margin: -16em calc(50% - 4em) 0 0; } }
 
 @media (min-width: 770px) {
-  /* line 736, scss/main.css */
+  /* line 754, scss/main.css */
   .section-three .experience-text .defense-shield {
     margin: -11em 3em 0 0; } }
 
 @media (min-width: 800px) {
-  /* line 739, scss/main.css */
+  /* line 757, scss/main.css */
   .section-three .experience-text .defense-shield {
     margin: -9em 3em 0 0; } }
 
 @media (min-width: 900px) {
-  /* line 742, scss/main.css */
+  /* line 760, scss/main.css */
   .section-three .experience-text .defense-shield {
     margin: -8em 3em 0 0; } }
 
 @media (min-width: 1000px) {
-  /* line 745, scss/main.css */
+  /* line 763, scss/main.css */
   .section-three .experience-text .defense-shield {
     margin: -9em 3em 0 0; } }
 
 @media (min-width: 1200px) {
-  /* line 748, scss/main.css */
+  /* line 766, scss/main.css */
   .section-three .experience-text .defense-shield {
     margin: -8em 3em 0 0; } }
 
 @media (min-width: 1400px) {
-  /* line 751, scss/main.css */
+  /* line 769, scss/main.css */
   .section-three .experience-text .defense-shield {
     margin: -6em 3em 0 0; } }
 
-/* line 754, scss/main.css */
+/* line 772, scss/main.css */
 .section-three .image-consultants {
   background-image: url("../photos/session 3/bottom-right.png");
   background-size: cover;
@@ -1034,14 +1052,14 @@ header .border-menu {
   width: 100%; }
 
 @media (min-width: 768px) {
-  /* line 762, scss/main.css */
+  /* line 780, scss/main.css */
   .section-three .image-consultants {
     width: 38%;
     position: absolute;
     margin: 31.2em 0 0 0;
     /* margin: 49.2em 0 0 0; */ } }
 
-/* line 768, scss/main.css */
+/* line 786, scss/main.css */
 .section-three .employee-image {
   background-image: url("../photos/session 3/man-photo.png");
   background-size: cover;
@@ -1052,7 +1070,7 @@ header .border-menu {
   position: relative;
   right: 10px; }
 
-/* line 778, scss/main.css */
+/* line 796, scss/main.css */
 .section-three .border-employes {
   height: 1%;
   border-bottom: 2px solid #171f3e;
@@ -1061,44 +1079,44 @@ header .border-menu {
   top: 82px; }
 
 @media (min-width: 970px) {
-  /* line 785, scss/main.css */
+  /* line 803, scss/main.css */
   .section-three .border-employes {
     width: 5%; } }
 
 @media (min-width: 1100px) {
-  /* line 788, scss/main.css */
+  /* line 806, scss/main.css */
   .section-three .border-employes {
     width: 7%; } }
 
 @media (min-width: 1300px) {
-  /* line 791, scss/main.css */
+  /* line 809, scss/main.css */
   .section-three .border-employes {
     width: 11%; } }
 
 @media (min-width: 1500px) {
-  /* line 794, scss/main.css */
+  /* line 812, scss/main.css */
   .section-three .border-employes {
     width: 20%; } }
 
 @media (min-width: 768px) {
-  /* line 798, scss/main.css */
+  /* line 816, scss/main.css */
   .section-four {
     margin: 15.9em 0 0 0; } }
 
-/* line 801, scss/main.css */
+/* line 819, scss/main.css */
 .section-four .number {
   margin: 0px 0px 10px calc(50% - 28px); }
 
-/* line 804, scss/main.css */
+/* line 822, scss/main.css */
 .section-four .section-three-header {
   background: #171f3e; }
 
 @media (min-width: 768px) {
-  /* line 807, scss/main.css */
+  /* line 825, scss/main.css */
   .section-four .section-three-header {
     height: 600px; } }
 
-/* line 809, scss/main.css */
+/* line 827, scss/main.css */
 .section-four .section-three-header p {
   color: white;
   font-weight: bold;
@@ -1108,12 +1126,12 @@ header .border-menu {
   margin: 1.8em calc(50% - 95px);
   letter-spacing: 1px; }
 
-/* line 817, scss/main.css */
+/* line 835, scss/main.css */
 .section-four .section-three-header .mac-photo {
   display: none; }
 
 @media (min-width: 1100px) {
-  /* line 820, scss/main.css */
+  /* line 838, scss/main.css */
   .section-four .section-three-header .mac-photo {
     display: inline-block;
     background-image: url("../photos/session 4/MacBook.png");
@@ -1123,7 +1141,7 @@ header .border-menu {
     width: 479px;
     margin: 252px 15px 8px 43px; } }
 
-/* line 829, scss/main.css */
+/* line 847, scss/main.css */
 .section-four .lists .list-one,
 .section-four .lists .list-two {
   margin: 0em 0 0 0.5em;
@@ -1131,7 +1149,7 @@ header .border-menu {
   line-height: 26px; }
 
 @media (min-width: 768px) {
-  /* line 835, scss/main.css */
+  /* line 853, scss/main.css */
   .section-four .lists .list-one,
   .section-four .lists .list-two {
     font-size: 22px;
@@ -1139,34 +1157,34 @@ header .border-menu {
     margin: 3em 0 0 4em; } }
 
 @media (min-width: 1100px) {
-  /* line 841, scss/main.css */
+  /* line 859, scss/main.css */
   .section-four .lists .list-one,
   .section-four .lists .list-two {
     margin: 3em 0 0 10.4em; } }
 
-/* line 845, scss/main.css */
+/* line 863, scss/main.css */
 .section-four .lists .list-two {
   margin: -1em 0 0 0.5em; }
 
 @media (min-width: 768px) {
-  /* line 848, scss/main.css */
+  /* line 866, scss/main.css */
   .section-four .lists .list-two {
     margin: 3em 0 0 0em; } }
 
-/* line 851, scss/main.css */
+/* line 869, scss/main.css */
 .section-four .lists ul li {
   color: #118ded; }
 
-/* line 853, scss/main.css */
+/* line 871, scss/main.css */
 .section-four .lists ul li span {
   color: #171f3e; }
 
-/* line 856, scss/main.css */
+/* line 874, scss/main.css */
 .section-four .references {
   display: none; }
 
 @media (min-width: 1100px) {
-  /* line 859, scss/main.css */
+  /* line 877, scss/main.css */
   .section-four .references {
     margin: 4.5em 0 0 0;
     display: inline-block;
@@ -1175,16 +1193,16 @@ header .border-menu {
     border-left: 8px solid #1a2240; } }
 
 @media (min-width: 1200px) {
-  /* line 866, scss/main.css */
+  /* line 884, scss/main.css */
   .section-four .references {
     margin: 0; } }
 
-/* line 868, scss/main.css */
+/* line 886, scss/main.css */
 .section-four .references .logo {
   margin: calc(50% - 450px) calc(50% - 380px);
   color: #a7a8b0; }
 
-/* line 871, scss/main.css */
+/* line 889, scss/main.css */
 .section-four .references .comp-text {
   float: right;
   margin: -10em 5em 0 25em;
@@ -1192,30 +1210,30 @@ header .border-menu {
   font-style: italic;
   color: #a7a8b0; }
 
-/* line 877, scss/main.css */
+/* line 895, scss/main.css */
 .section-four .references .comp-more {
   float: right;
   margin: 1.5em 5em 0 0;
   font-weight: bold;
   color: #1a2240; }
 
-/* line 882, scss/main.css */
+/* line 900, scss/main.css */
 .section-four .references .comp-more:hover {
   color: #1e93ee;
   cursor: pointer;
   transition: 500ms; }
 
-/* line 886, scss/main.css */
+/* line 904, scss/main.css */
 .section-four .references .visible {
   display: inline-block; }
 
-/* line 889, scss/main.css */
+/* line 907, scss/main.css */
 .section-four .left-slider-btn,
 .section-four .right-slider-btn {
   display: none; }
 
 @media (min-width: 1100px) {
-  /* line 893, scss/main.css */
+  /* line 911, scss/main.css */
   .section-four .left-slider-btn,
   .section-four .right-slider-btn {
     display: inline-block;
@@ -1230,42 +1248,42 @@ header .border-menu {
     margin: 3em 0 0 calc(50% + 16em);
     font-size: 25px; } }
 
-/* line 906, scss/main.css */
+/* line 924, scss/main.css */
 .section-four .left-slider-btn p,
 .section-four .right-slider-btn p {
   color: #e0e0e0;
   padding: calc(50% - 20px) calc(50% - 8px); }
 
-/* line 911, scss/main.css */
+/* line 929, scss/main.css */
 .section-four .right-slider-btn {
   margin: -40px 0 0 calc(50% + 18em); }
 
-/* line 914, scss/main.css */
+/* line 932, scss/main.css */
 .section-four .left-slider-btn:hover,
 .section-four .right-slider-btn:hover {
   cursor: pointer;
   border: 2px solid #118ded; }
 
-/* line 918, scss/main.css */
+/* line 936, scss/main.css */
 .section-four .left-slider-btn:hover p,
 .section-four .right-slider-btn:hover p {
   color: #118ded; }
 
-/* line 922, scss/main.css */
+/* line 940, scss/main.css */
 .section-five .section-number {
   display: none;
   margin: 3.8em 0 0 0; }
 
 @media (min-width: 768px) {
-  /* line 926, scss/main.css */
+  /* line 944, scss/main.css */
   .section-five .section-number {
     display: inline-block; } }
 
-/* line 928, scss/main.css */
+/* line 946, scss/main.css */
 .section-five .section-number .number {
   margin: 0px 0px 10px calc(50% - 28px); }
 
-/* line 931, scss/main.css */
+/* line 949, scss/main.css */
 .section-five .management-header p {
   font-size: 30px;
   font-weight: bold;
@@ -1274,27 +1292,27 @@ header .border-menu {
   padding-left: 30px; }
 
 @media (min-width: 768px) {
-  /* line 938, scss/main.css */
+  /* line 956, scss/main.css */
   .section-five .management-header p {
     margin: 4em 0 0 0.5em; } }
 
-/* line 941, scss/main.css */
+/* line 959, scss/main.css */
 .section-five .management {
   float: right;
   list-style-type: none;
   margin-right: 40px;
   margin-top: 52px; }
 
-/* line 946, scss/main.css */
+/* line 964, scss/main.css */
 .section-five .management li {
   display: inline-block;
   margin: 0 10px 0 0; }
 
-/* line 949, scss/main.css */
+/* line 967, scss/main.css */
 .section-five .management li ul {
   list-style-type: none; }
 
-/* line 951, scss/main.css */
+/* line 969, scss/main.css */
 .section-five .management li ul li {
   display: block;
   font-size: 22px;
@@ -1302,14 +1320,14 @@ header .border-menu {
   margin-top: 8px;
   color: #171f3e; }
 
-/* line 957, scss/main.css */
+/* line 975, scss/main.css */
 .section-five .management li ul :last-child {
   font-size: 18px;
   font-size: 20px;
   font-weight: normal;
   margin-top: -4px; }
 
-/* line 963, scss/main.css */
+/* line 981, scss/main.css */
 .section-five .management-first-image {
   background-image: url("../photos/session 5/top-one-photo.png");
   background-size: cover;
@@ -1317,7 +1335,7 @@ header .border-menu {
   height: 150px;
   width: 150px; }
 
-/* line 970, scss/main.css */
+/* line 988, scss/main.css */
 .section-five .management-second-image {
   background-image: url("../photos/session 5/top-two-photo.png");
   background-size: cover;
@@ -1325,7 +1343,7 @@ header .border-menu {
   height: 150px;
   width: 150px; }
 
-/* line 977, scss/main.css */
+/* line 995, scss/main.css */
 .section-five .management-third-image {
   background-image: url("../photos/session 5/top-three-photo.png");
   background-size: cover;
@@ -1333,7 +1351,7 @@ header .border-menu {
   height: 150px;
   width: 150px; }
 
-/* line 984, scss/main.css */
+/* line 1002, scss/main.css */
 .section-five .management-fourth-image {
   background-image: url("../photos/session 5/top-four-photo.png");
   background-size: cover;
@@ -1341,63 +1359,71 @@ header .border-menu {
   height: 150px;
   width: 150px; }
 
-/* line 991, scss/main.css */
+/* line 1009, scss/main.css */
 .section-five .managment-desc-one,
 .section-five .managment-desc-two {
   float: right; }
 
-/* line 995, scss/main.css */
+/* line 1013, scss/main.css */
 .section-five .managment-desc-one {
   background-image: url("../photos/session 5/bottom-right-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 490px; }
 
-/* line 1001, scss/main.css */
+/* line 1019, scss/main.css */
 .section-five .managment-desc-two {
   background-image: url("../photos/session 5/bottom-left-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 490px; }
 
-/* line 1006, scss/main.css */
+/* line 1024, scss/main.css */
 .section-five .managment-desc-two :first-child {
   color: white;
   font-weight: bold;
   font-size: 22px;
-  margin: 4em 0 0 1em; }
+  margin: 4em 0 0 0em;
+  text-align: center; }
 
-/* line 1011, scss/main.css */
+@media (min-width: 768px) {
+  /* line 1031, scss/main.css */
+  .section-five .managment-desc-two :first-child {
+    margin: 4em 0 0 1em;
+    text-align: justify; } }
+
+/* line 1034, scss/main.css */
 .section-five .managment-desc-two :nth-child(2),
 .section-five .managment-desc-two :nth-child(3) {
   color: white;
   margin: 1em 1em 0 1em;
   font-size: 20px;
-  text-align: justify; }
+  text-align: center; }
 
 @media (min-width: 768px) {
-  /* line 1018, scss/main.css */
+  /* line 1041, scss/main.css */
   .section-five .managment-desc-two :nth-child(2),
   .section-five .managment-desc-two :nth-child(3) {
+    text-align: justify;
     margin: 1em 10em 0 1em; } }
 
-/* line 1021, scss/main.css */
+/* line 1045, scss/main.css */
 .section-five .managment-desc-two :nth-child(3) {
   margin: 1em 1em 0 1em; }
 
 @media (min-width: 768px) {
-  /* line 1024, scss/main.css */
+  /* line 1048, scss/main.css */
   .section-five .managment-desc-two :nth-child(3) {
     margin: 1em 10em 0 1em; } }
 
-/* line 1026, scss/main.css */
+/* line 1050, scss/main.css */
 .section-five .managment-desc-two :nth-child(4) {
   color: white;
   margin: 9em 4.5em 0 0;
   float: right;
   font-weight: bold; }
 
-/* line 1031, scss/main.css */
+/* line 1055, scss/main.css */
 .section-five .managment-desc-two .play-btn {
   border: 3px solid #1e93ee;
   width: 30px;
@@ -1406,13 +1432,13 @@ header .border-menu {
   margin: 8.7em -7em 0 0;
   float: right; }
 
-/* line 1038, scss/main.css */
+/* line 1062, scss/main.css */
 .section-five .managment-desc-two .play-btn i {
   margin: 4px 0 0 calc(50% - 7px);
   transform: scale(0.5, 0.5);
   color: #1e93ee; }
 
-/* line 1043, scss/main.css */
+/* line 1067, scss/main.css */
 .section-five .top-photo-border {
   display: none;
   height: 26em;
@@ -1423,41 +1449,41 @@ header .border-menu {
   margin: -44.5em 2em 0 0; }
 
 @media (min-width: 1000px) {
-  /* line 1052, scss/main.css */
+  /* line 1076, scss/main.css */
   .section-five .top-photo-border {
     display: inline-block; } }
 
 @media (min-width: 1200px) {
-  /* line 1055, scss/main.css */
+  /* line 1079, scss/main.css */
   .section-five .top-photo-border {
     margin: -44.5em 5em 0 0; } }
 
 @media (min-width: 1300px) {
-  /* line 1058, scss/main.css */
+  /* line 1082, scss/main.css */
   .section-five .top-photo-border {
     margin: -44.5em 8em 0 0; } }
 
 @media (min-width: 1400px) {
-  /* line 1061, scss/main.css */
+  /* line 1085, scss/main.css */
   .section-five .top-photo-border {
     margin: -44.5em 11em 0 0; } }
 
 @media (min-width: 1500px) {
-  /* line 1064, scss/main.css */
+  /* line 1088, scss/main.css */
   .section-five .top-photo-border {
     margin: -44.5em 14em 0 0; } }
 
 @media (min-width: 1600px) {
-  /* line 1067, scss/main.css */
+  /* line 1091, scss/main.css */
   .section-five .top-photo-border {
     margin: -44.5em 18em 0 0; } }
 
 @media (min-width: 1800px) {
-  /* line 1070, scss/main.css */
+  /* line 1094, scss/main.css */
   .section-five .top-photo-border {
     margin: -44.5em 26em 0 0; } }
 
-/* line 1073, scss/main.css */
+/* line 1097, scss/main.css */
 .section-five .left-photo-border {
   height: 2px;
   width: 29%;
@@ -1466,15 +1492,15 @@ header .border-menu {
   position: relative;
   margin: -26.5em 0 0 0em; }
 
-/* line 1081, scss/main.css */
+/* line 1105, scss/main.css */
 .section-six .section-numbers {
   margin: -3.3em 0 0 0; }
 
-/* line 1083, scss/main.css */
+/* line 1107, scss/main.css */
 .section-six .section-numbers .number {
   margin: 0px 0px 10px calc(50% - 28px); }
 
-/* line 1086, scss/main.css */
+/* line 1110, scss/main.css */
 .section-six .section-six-bg {
   background: #1a2240;
   width: 100%;
@@ -1483,11 +1509,11 @@ header .border-menu {
   z-index: -1; }
 
 @media (min-width: 768px) {
-  /* line 1093, scss/main.css */
+  /* line 1117, scss/main.css */
   .section-six .section-six-bg {
     width: 65%; } }
 
-/* line 1096, scss/main.css */
+/* line 1120, scss/main.css */
 .section-six .section-six-job-photo {
   background-image: url("../photos/session 6/apliccation-bg.png");
   background-size: cover;
@@ -1496,24 +1522,33 @@ header .border-menu {
   position: relative;
   height: 430px; }
 
-/* line 1103, scss/main.css */
+/* line 1127, scss/main.css */
 .section-six .section-six-job-photo h2 {
   font-size: 35px;
   color: white;
-  margin: 6.5em 0 0 2em; }
+  margin: 6.5em 0 0 0em;
+  text-align: center; }
 
 @media (min-width: 768px) {
-  /* line 1108, scss/main.css */
+  /* line 1133, scss/main.css */
   .section-six .section-six-job-photo h2 {
+    text-align: start;
     margin: 7.5em 0 0 2em; } }
 
-/* line 1110, scss/main.css */
+/* line 1136, scss/main.css */
 .section-six .section-six-job-photo p {
-  margin: 0.9em 0 0 3.3em;
+  text-align: center;
+  margin: 0.9em 0 0 0em;
   font-size: 22px;
   color: white; }
 
-/* line 1115, scss/main.css */
+@media (min-width: 768px) {
+  /* line 1142, scss/main.css */
+  .section-six .section-six-job-photo p {
+    text-align: start;
+    margin: 0.9em 0 0 3.3em; } }
+
+/* line 1146, scss/main.css */
 .section-six .section-six-header :first-child {
   font-size: 30px;
   color: white;
@@ -1522,19 +1557,31 @@ header .border-menu {
   border-left: 8px solid #1e93ee;
   padding-left: 1em; }
 
-/* line 1123, scss/main.css */
+/* line 1154, scss/main.css */
 .section-six .section-six-header :nth-child(2) {
   color: #1e93ee;
   font-size: 26px;
-  margin: 5em 0 0 -0.5em; }
+  margin: 5em 0 0 -0.5em;
+  text-align: center; }
 
-/* line 1128, scss/main.css */
+@media (min-width: 768px) {
+  /* line 1160, scss/main.css */
+  .section-six .section-six-header :nth-child(2) {
+    text-align: justify; } }
+
+/* line 1163, scss/main.css */
 .section-six .section-six-header :last-child {
   color: white;
   font-size: 22px;
-  margin: 1em 0 0 -0.5em; }
+  margin: 1em 0 0 -0.5em;
+  text-align: center; }
 
-/* line 1133, scss/main.css */
+@media (min-width: 768px) {
+  /* line 1169, scss/main.css */
+  .section-six .section-six-header :last-child {
+    text-align: justify; } }
+
+/* line 1172, scss/main.css */
 .section-six .tight-stripe {
   height: 10px;
   background: #1e93ee;
@@ -1542,12 +1589,12 @@ header .border-menu {
   width: 49%;
   float: right; }
 
-/* line 1140, scss/main.css */
+/* line 1179, scss/main.css */
 .section-six .s7-down-arrow {
   display: none; }
 
 @media (min-width: 768px) {
-  /* line 1143, scss/main.css */
+  /* line 1182, scss/main.css */
   .section-six .s7-down-arrow {
     display: inline-block;
     border-right: 2px solid #1e93ee;
@@ -1558,7 +1605,7 @@ header .border-menu {
     margin-top: 25px;
     margin-bottom: -17px; } }
 
-/* line 1153, scss/main.css */
+/* line 1192, scss/main.css */
 .section-six .requirements {
   display: inline-block;
   bottom: 6em;
@@ -1568,11 +1615,11 @@ header .border-menu {
   font-weight: bold; }
 
 @media (min-width: 768px) {
-  /* line 1161, scss/main.css */
+  /* line 1200, scss/main.css */
   .section-six .requirements {
     bottom: 20em; } }
 
-/* line 1164, scss/main.css */
+/* line 1203, scss/main.css */
 .section-six .requirements-list {
   display: inline-block;
   top: 2em;
@@ -1580,19 +1627,19 @@ header .border-menu {
   left: -70px; }
 
 @media (min-width: 768px) {
-  /* line 1170, scss/main.css */
+  /* line 1209, scss/main.css */
   .section-six .requirements-list {
     top: -13em; } }
 
-/* line 1172, scss/main.css */
+/* line 1211, scss/main.css */
 .section-six .requirements-list li {
   color: #1e93ee; }
 
-/* line 1174, scss/main.css */
+/* line 1213, scss/main.css */
 .section-six .requirements-list li span {
   color: #1a2240; }
 
-/* line 1177, scss/main.css */
+/* line 1216, scss/main.css */
 .section-six .require-left-slider-btn,
 .section-six .require-right-slider-btn {
   text-align: center;
@@ -1607,38 +1654,38 @@ header .border-menu {
   font-size: 25px; }
 
 @media (min-width: 768px) {
-  /* line 1190, scss/main.css */
+  /* line 1229, scss/main.css */
   .section-six .require-left-slider-btn,
   .section-six .require-right-slider-btn {
     margin: 2em 0 0 calc(50% + 2em); } }
 
-/* line 1193, scss/main.css */
+/* line 1232, scss/main.css */
 .section-six .require-left-slider-btn p,
 .section-six .require-right-slider-btn p {
   color: #e0e0e0;
   padding: calc(50% - 20px) calc(50% - 8px); }
 
-/* line 1198, scss/main.css */
+/* line 1237, scss/main.css */
 .section-six .require-right-slider-btn {
   margin: -1.55em 0 0 calc(50% + 5em); }
 
 @media (min-width: 768px) {
-  /* line 1201, scss/main.css */
+  /* line 1240, scss/main.css */
   .section-six .require-right-slider-btn {
     margin: -1.6em 0 0 calc(50% + 4em); } }
 
-/* line 1204, scss/main.css */
+/* line 1243, scss/main.css */
 .section-six .require-left-slider-btn:hover,
 .section-six .require-right-slider-btn:hover {
   cursor: pointer;
   border: 2px solid #118ded; }
 
-/* line 1208, scss/main.css */
+/* line 1247, scss/main.css */
 .section-six .require-left-slider-btn:hover p,
 .section-six .require-right-slider-btn:hover p {
   color: #118ded; }
 
-/* line 1212, scss/main.css */
+/* line 1251, scss/main.css */
 .section-six .aplication-btn {
   width: 325px;
   height: 40px;
@@ -1651,35 +1698,35 @@ header .border-menu {
   letter-spacing: 0.5px; }
 
 @media (min-width: 768px) {
-  /* line 1223, scss/main.css */
+  /* line 1262, scss/main.css */
   .section-six .aplication-btn {
     margin: 11em 0em 0 -3em; } }
 
-/* line 1226, scss/main.css */
+/* line 1265, scss/main.css */
 .section-six .aplication-btn:hover {
   color: white;
   background: #1a2240;
   transition: 500ms;
   transform: scale(1.2, 1.2); }
 
-/* line 1232, scss/main.css */
+/* line 1271, scss/main.css */
 .section-seven {
   background: #1a2240; }
 
-/* line 1234, scss/main.css */
+/* line 1273, scss/main.css */
 .section-seven .section-numbers {
   display: none; }
 
 @media (min-width: 768px) {
-  /* line 1237, scss/main.css */
+  /* line 1276, scss/main.css */
   .section-seven .section-numbers {
     display: inline-block; } }
 
-/* line 1239, scss/main.css */
+/* line 1278, scss/main.css */
 .section-seven .number {
   margin: 0px 0px 10px calc(50% - 28px); }
 
-/* line 1241, scss/main.css */
+/* line 1280, scss/main.css */
 .section-seven .s7-bg {
   background-image: url("../photos/session 7/map.png");
   background-size: cover;
@@ -1688,24 +1735,24 @@ header .border-menu {
   border-left: 1px solid #1e93ee; }
 
 @media (min-width: 768px) {
-  /* line 1248, scss/main.css */
+  /* line 1287, scss/main.css */
   .section-seven .s7-bg {
     height: 899px;
     position: absolute; } }
 
-/* line 1251, scss/main.css */
+/* line 1290, scss/main.css */
 .section-seven .form-bg {
   background: white;
   width: 340px;
   height: 498px; }
 
 @media (min-width: 768px) {
-  /* line 1256, scss/main.css */
+  /* line 1295, scss/main.css */
   .section-seven .form-bg {
     width: 410px;
     margin: 9em 0 0 3em; } }
 
-/* line 1259, scss/main.css */
+/* line 1298, scss/main.css */
 .section-seven .form-bg form :first-child,
 .section-seven .form-bg form input,
 .section-seven .form-bg form textarea {
@@ -1718,23 +1765,23 @@ header .border-menu {
   color: #1e93ee; }
 
 @media (min-width: 768px) {
-  /* line 1270, scss/main.css */
+  /* line 1309, scss/main.css */
   .section-seven .form-bg form :first-child,
   .section-seven .form-bg form input,
   .section-seven .form-bg form textarea {
     width: 25.5em;
     margin-left: calc(50% - 170px); } }
 
-/* line 1275, scss/main.css */
+/* line 1314, scss/main.css */
 .section-seven .form-bg form input {
   margin-top: 0em; }
 
-/* line 1277, scss/main.css */
+/* line 1316, scss/main.css */
 .section-seven .form-bg form textarea {
   margin-top: 0em;
   height: 13em; }
 
-/* line 1280, scss/main.css */
+/* line 1319, scss/main.css */
 .section-seven .form-bg form label {
   float: left;
   display: inline-block;
@@ -1746,15 +1793,15 @@ header .border-menu {
   font-weight: bold; }
 
 @media (min-width: 768px) {
-  /* line 1290, scss/main.css */
+  /* line 1329, scss/main.css */
   .section-seven .form-bg form label {
     margin: 5px 0px 5px 35px; } }
 
-/* line 1292, scss/main.css */
+/* line 1331, scss/main.css */
 .section-seven .form-bg form .border-input {
   border: 2px solid #1e93ee; }
 
-/* line 1294, scss/main.css */
+/* line 1333, scss/main.css */
 .section-seven .form-bg .send-btn {
   width: 200px;
   height: 50px;
@@ -1764,17 +1811,17 @@ header .border-menu {
   margin: 1.2em 2em 0 0;
   color: white; }
 
-/* line 1302, scss/main.css */
+/* line 1341, scss/main.css */
 .section-seven .form-bg .send-btn:hover {
   transform: scale(1.2, 1.2);
   transition: 500ms;
   cursor: pointer; }
 
-/* line 1306, scss/main.css */
+/* line 1345, scss/main.css */
 .section-seven .contact {
   border-bottom: 1px solid #1e93ee; }
 
-/* line 1308, scss/main.css */
+/* line 1347, scss/main.css */
 .section-seven .contact :first-child {
   font-size: 30px;
   color: white;
@@ -1784,11 +1831,11 @@ header .border-menu {
   padding-left: 1em; }
 
 @media (min-width: 768px) {
-  /* line 1316, scss/main.css */
+  /* line 1355, scss/main.css */
   .section-seven .contact :first-child {
     margin: 3.3em 0 0 0; } }
 
-/* line 1318, scss/main.css */
+/* line 1357, scss/main.css */
 .section-seven .contact :nth-child(2) {
   color: #66ceeb;
   font-weight: bold;
@@ -1796,34 +1843,34 @@ header .border-menu {
   margin: 2em 0 2em 0; }
 
 @media (min-width: 768px) {
-  /* line 1324, scss/main.css */
+  /* line 1363, scss/main.css */
   .section-seven .contact :nth-child(2) {
     margin: 7em 0 0 0; } }
 
-/* line 1326, scss/main.css */
+/* line 1365, scss/main.css */
 .section-seven .contact :nth-child(3),
 .section-seven .contact :nth-child(4) {
   color: white; }
 
-/* line 1329, scss/main.css */
+/* line 1368, scss/main.css */
 .section-seven .contact :nth-child(4) {
   margin: 0 0 1em 0; }
 
-/* line 1331, scss/main.css */
+/* line 1370, scss/main.css */
 .section-seven .contact :nth-child(5),
 .section-seven .contact :nth-child(6) {
   color: white; }
 
-/* line 1334, scss/main.css */
+/* line 1373, scss/main.css */
 .section-seven .contact :nth-child(6) {
   margin-bottom: 2.5em; }
 
 @media (min-width: 768px) {
-  /* line 1337, scss/main.css */
+  /* line 1376, scss/main.css */
   .section-seven .contact :nth-child(6) {
     margin-bottom: 11.5em; } }
 
-/* line 1339, scss/main.css */
+/* line 1378, scss/main.css */
 .section-seven .s7-logo {
   font-size: 40px;
   color: #66ceeb;
@@ -1832,11 +1879,11 @@ header .border-menu {
   margin: 0em 0 1.5em 0; }
 
 @media (min-width: 768px) {
-  /* line 1346, scss/main.css */
+  /* line 1385, scss/main.css */
   .section-seven .s7-logo {
     margin: 3em 0 1.5em 0; } }
 
-/* line 1349, scss/main.css */
+/* line 1388, scss/main.css */
 footer {
   height: 50px;
   position: absolute;
@@ -1845,17 +1892,17 @@ footer {
   opacity: 1;
   border-top: 1px solid #1e93ee; }
 
-/* line 1357, scss/main.css */
+/* line 1396, scss/main.css */
 .footer-border {
   border-left: 1px solid #1e93ee; }
 
-/* line 1359, scss/main.css */
+/* line 1398, scss/main.css */
 .footer-border p {
   color: #5d6171;
   text-align: center;
   margin: -15px 0 0px 0px; }
 
 @media (min-width: 768px) {
-  /* line 1364, scss/main.css */
+  /* line 1403, scss/main.css */
   .footer-border p {
     margin: 2px 0 6px 0px; } }

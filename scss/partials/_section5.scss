@@ -94,15 +94,21 @@
             color: white;
             font-weight: bold;
             font-size: 22px;
-            margin: 4em 0 0 1em;
+            margin: 4em 0 0 0em;
+            text-align: center;
+            @media(min-width: 768px) {
+                margin: 4em 0 0 1em;
+                text-align: justify;
+            }
         }
          :nth-child(2),
          :nth-child(3) {
             color: white;
             margin: 1em 1em 0 1em;
             font-size: 20px;
-            text-align: justify;
+            text-align: center;
             @media(min-width: 768px) {
+                text-align: justify;
                 margin: 1em 10em 0 1em;
             }
         }
